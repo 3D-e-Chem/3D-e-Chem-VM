@@ -1,0 +1,23 @@
+---
+- hosts: all
+  roles:
+    - bootstrap
+    - knime
+    - lxde
+    - wiki
+    - virtualbox-guest-additions
+    - fpocket
+    - r
+    - self-upgrade
+  tasks:
+    - name: chem tools
+      apt: pkg={{ item }} state=latest
+      with_items:
+        - openbabel
+        - openbabel-gui
+        - python-openbabel
+        - libchemistry-openbabel-perl
+        - viewmol
+        - xdrawchem
+    - name: apt clean
+      command: apt-get clean -y

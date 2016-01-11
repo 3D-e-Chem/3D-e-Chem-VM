@@ -1,0 +1,10 @@
+---
+- name: Check Knime is already installed
+  stat: path=/opt/knime/knime-full_{{ knime_version }}/knime
+  register: knime_installed
+- include: install_knime.yml
+  when: knime_installed.stat.islnk is not defined
+- include: desktop_icon.yml
+- include: more_memory.yml
+- include: python_nodes.yml
+- include: plugins.yml

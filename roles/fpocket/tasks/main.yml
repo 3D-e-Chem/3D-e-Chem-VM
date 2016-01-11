@@ -1,0 +1,20 @@
+---
+# These tasks installs fpocket.
+- name: pymol
+  apt: pkg=pymol state=latest
+- name: Fetching fpocket tarball
+  get_url: url=http://downloads.sourceforge.net/project/fpocket/fpocket2.tar.gz?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Ffpocket%2F&ts=1439986314&use_mirror=skylink dest=/opt/fpocket2.tar.gz mode=0440
+- name: Unpacking fpocket tarball
+  unarchive: src=/opt/fpocket2.tar.gz dest=/opt copy=no creates=/opt/fpocket2/changelog.txt
+- name: Patching fpocket makefile (See http://sourceforge.net/p/fpocket/mailman/message/28785185/)
+  replace: dest=/opt/fpocket2/makefile regexp='\$\(LINKER\) \$\(LFLAGS\) \$\^ -o \$@' replace='$(LINKER) $^ -o $@ $(LFLAGS)'
+- name: Making fpocket
+  command: /usr/bin/make
+  args:
+    chdir: /opt/fpocket2
+    creates: /opt/fpocket2/bin/fpocket
+- name: Installing fpock
+  command: /usr/bin/make install
+  args:
+    chdir: /opt/fpocket2
+    creates: /usr/local/bin/fpocket

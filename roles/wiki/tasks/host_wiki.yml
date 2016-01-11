@@ -1,0 +1,14 @@
+---
+- user: name=gollum system=yes state=present
+- name: Install Gollum init script
+  template: src=init/gollum.conf.j2 dest=/etc/init/gollum.conf mode=u+rw,go+r
+- name: Install git
+  apt: pkg=git state=present
+- name: Cloning Github wiki
+  git: repo="{{ wiki_clone_url }}" dest=/opt/wiki
+- name: Change ownership of wiki
+  file: path=/opt/wiki owner=gollum state=directory recurse=yes
+  notify:
+  - restart gollum
+- name: Start Gollum
+  service: name=gollum state=started enabled=yes

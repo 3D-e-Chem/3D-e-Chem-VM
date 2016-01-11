@@ -1,0 +1,4 @@
+---
+- file: path="{{ desktop_dir }}" state=directory mode=0755
+- name: Terminal desktop icon
+  file: src=/usr/share/applications/lxterminal.desktop dest={{ desktop_dir }}/lxterminal.desktop state=link

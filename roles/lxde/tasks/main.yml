@@ -1,0 +1,5 @@
+---
+- include: install_lxde.yml
+- include: disable-locker.yml
+- include: autologin.yml
+- include: desktop_icon.yml

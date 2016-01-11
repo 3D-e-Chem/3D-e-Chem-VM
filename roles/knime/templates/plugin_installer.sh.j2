@@ -1,0 +1,9 @@
+#!/bin/sh
+
+/usr/bin/knime -nosplash -application org.eclipse.equinox.p2.director \
+-profile KNIMEProfile -destination {{ knime_root }} \
+-repository http://www.knime.org/update/{{ knime_update_version }}/,\
+http://tech.knime.org/update/community-contributions/trusted/{{ knime_update_version }}/,\
+http://update.knime.org/community-contributions/{{ knime_update_version }}/ \
+-installIU $1
+touch {{ knime_root }}/$1.installed

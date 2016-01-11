@@ -1,0 +1,3 @@
+---
+- name: Ensure lxde desktop environment is installed
+  apt: pkg=lubuntu-desktop state=present

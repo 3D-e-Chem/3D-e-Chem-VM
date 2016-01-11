@@ -1,0 +1,3 @@
+---
+- lineinfile: dest=/opt/knime/knime-full_{{ knime_version }}/knime.ini regexp=^-XX:MaxPermSize= line=-XX:MaxPermSize=512m
+- lineinfile: dest=/opt/knime/knime-full_{{ knime_version }}/knime.ini regexp=^-Xmx line=-Xmx2048m

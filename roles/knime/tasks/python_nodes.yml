@@ -1,0 +1,9 @@
+---
+- name: python knime node deps
+  apt: pkg={{ item }} state=latest
+  with_items:
+    - python-pandas
+    - python-protobuf
+    - python-pip
+- name: python knime autocomplete
+  pip: name=jedi

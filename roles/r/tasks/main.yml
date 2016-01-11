@@ -1,0 +1,6 @@
+---
+- include: install.yml
+- include: installer.yml
+- include: rserve.yml
+- include: ggplot2.yml
+- include: camb.yml

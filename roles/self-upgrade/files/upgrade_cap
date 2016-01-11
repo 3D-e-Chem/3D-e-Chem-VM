@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as with sudo" 1>&2
+   exit 1
+fi
+
+echo 'Machine will be reboot when required, start this script again to continue upgrading'
+
+cd /opt/playbook
+git pull
+ansible-playbook playbook.yml

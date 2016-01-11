@@ -1,0 +1,10 @@
+---
+- name: Rserve
+  # use apt instead of install from cran as apt has latest version
+  apt: pkg={{ item }} state=present
+  with_items:
+    - r-cran-rserve
+- name: Install Rserve init script
+  template: src=rserve.conf.j2 dest=/etc/init/rserve.conf
+- name: Start Rserve
+  service: name=rserve state=started enabled=yes

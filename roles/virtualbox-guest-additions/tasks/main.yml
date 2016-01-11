@@ -1,0 +1,24 @@
+---
+- name: Install requirements
+  apt: name={{ item }} state=present
+  with_items:
+  - linux-headers-generic
+  - build-essential
+  - dkms
+- name: Download iso
+  get_url: url=http://download.virtualbox.org/virtualbox/{{ virtualbox_version }}/VBoxGuestAdditions_{{ virtualbox_version }}.iso dest=/opt/VBoxGuestAdditions_{{ virtualbox_version }}.iso
+- name: Mount iso
+  mount: src=/opt/VBoxGuestAdditions_{{ virtualbox_version }}.iso name=/media/cdrom state=mounted fstype=iso9660 opts=loop,ro
+- name: Install
+  # installer always returns bad exit code, so ignore
+  shell: /bin/sh /media/cdrom/VBoxLinuxAdditions.run || /bin/true creates={{ item }}
+  with_items:
+  - /opt/VBoxGuestAdditions-{{ virtualbox_version }}
+  - /lib/modules/{{ ansible_kernel }}/updates/dkms/vboxguest.ko
+  - /lib/modules/{{ ansible_kernel }}/updates/dkms/vboxsf.ko
+  - /lib/modules/{{ ansible_kernel }}/updates/dkms/vboxvideo.ko
+  - /usr/lib/xorg/modules/drivers/vboxvideo_drv.so
+  notify:
+  - restart x
+- name: Unmount iso
+  mount: src=/opt/VBoxGuestAdditions_{{ virtualbox_version }}.iso name=/media/cdrom state=unmounted fstype=iso9660

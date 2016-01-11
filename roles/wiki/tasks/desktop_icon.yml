@@ -1,0 +1,11 @@
+---
+- name: web browsers
+  apt: pkg={{ item }} state=latest
+  with_items:
+    - firefox
+- service: name=gollum state=started
+- name: Add desktop icon for wiki
+  template: src=wiki.desktop.j2 dest=/usr/share/applications/wiki.desktop
+- file: path="{{ desktop_dir }}" state=directory mode=0755  
+- name: Knime desktop icon
+  file: src=/usr/share/applications/wiki.desktop dest={{ desktop_dir }}/wiki.desktop state=link

@@ -1,0 +1,5 @@
+---
+- name: remove screen locker
+  file: path=/etc/xdg/autostart/light-locker.desktop state=absent
+  notify:
+  - restart lightdm

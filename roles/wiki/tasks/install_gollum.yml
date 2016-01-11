@@ -1,0 +1,10 @@
+---
+- name: dependencies for gollum
+  apt: pkg={{ item }} state=present
+  with_items:
+    - ruby-dev
+    - libicu-dev
+    - zlib1g-dev
+    - build-essential
+- name: install gollum gem
+  gem: name=gollum state=latest user_install=no
