@@ -1,2 +1,5 @@
 output-virtualbox-iso/
 packer_cache/
+3D-e-Chem/
+tmp/
+packer_virtualbox-iso_virtualbox.box
