@@ -21,3 +21,5 @@
         - xdrawchem
     - name: apt clean
       command: apt-get clean -y
+    - name: Zerofree
+      shell: dd if=/dev/zero of=/EMPTY bs=100M || rm -f /EMPTY || syncshell: dd if=/dev/zero of=/EMPTY bs=100M || rm -f /EMPTY || sync
