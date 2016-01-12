@@ -9,6 +9,8 @@
     - libgeos-dev
     - libssl-dev
     - libcurl4-openssl-dev
+    - libxml2-dev
+    - libnlopt-dev
 - name: camb cran dependencies
   command: install2.r -r {{ cran_url }} {{ item }} creates=/usr/local/lib/R/site-library/{{ item }}
   with_items:
