@@ -8,7 +8,7 @@ Scripts to create a Vagrant box using packer and ansible.
 Start virtual machine with
 
 ```
-vagrant init NLeSC/3D-e-Chem-VM
+vagrant init nlesc/3d-e-chem
 vagrant up
 ```
 
@@ -31,8 +31,7 @@ packer build packer.json
 Add box to Vagrant with
 
 ```
-vagrant box add --name NLeSC/3D-e-Chem --box-version <version> packer_virtualbox-iso_virtualbox.box
+vagrant box add --name nlesc/3d-e-chem --force packer_virtualbox-iso_virtualbox.box
 ```
-Where `<version>` is higher than box on https://atlas.hashicorp.com.
 
-Then use steps described at Usage chapter.
+Then use steps described at Usage chapter in a new directory.
