@@ -56,6 +56,7 @@
         "role_paths": ["roles/bootstrap", "roles/fpocket", "roles/knime", "roles/lxde", "roles/r", "roles/self-upgrade", "roles/virtualbox-guest-additions", "roles/wiki"]
     }],
     "post-processors": [{
-        "type": "vagrant"
+        "type": "vagrant",
+        "vagrantfile_template": "Vagrantfile.tpl"
     }]
 }
