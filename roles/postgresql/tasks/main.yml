@@ -1,0 +1,3 @@
+---
+- name: Postgresql server & client
+  apt: pkg=postgresql state=latest

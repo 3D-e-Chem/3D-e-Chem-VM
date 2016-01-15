@@ -9,6 +9,9 @@
     - fpocket
     - r
     - self-upgrade
+    - postgresql
+    - rdkit
+    - chembl
   tasks:
     - name: chem tools
       apt: pkg={{ item }} state=latest

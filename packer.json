@@ -55,13 +55,21 @@
         "type": "ansible-local",
         "extra_arguments": ["--become"],
         "playbook_file": "playbook.yml",
-        "role_paths": ["roles/bootstrap", "roles/fpocket", "roles/knime", "roles/lxde", "roles/r", "roles/self-upgrade", "roles/virtualbox-guest-additions", "roles/wiki"]
+        "role_paths": [
+            "roles/bootstrap", "roles/fpocket", "roles/knime", "roles/lxde",
+            "roles/r", "roles/self-upgrade", "roles/virtualbox-guest-additions", "roles/wiki",
+            "roles/postgresql", "roles/rdkit", "roles/chembl"
+        ]
     }, {
         "type": "ansible-local",
         "pause_before": "20s",
         "extra_arguments": ["--become"],
         "playbook_file": "playbook.yml",
-        "role_paths": ["roles/bootstrap", "roles/fpocket", "roles/knime", "roles/lxde", "roles/r", "roles/self-upgrade", "roles/virtualbox-guest-additions", "roles/wiki"]
+        "role_paths": [
+            "roles/bootstrap", "roles/fpocket", "roles/knime", "roles/lxde",
+            "roles/r", "roles/self-upgrade", "roles/virtualbox-guest-additions", "roles/wiki",
+            "roles/postgresql", "roles/rdkit", "roles/chembl"
+        ]
     }],
     "post-processors": [{
         "type": "vagrant",

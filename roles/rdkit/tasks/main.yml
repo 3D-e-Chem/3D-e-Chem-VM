@@ -1,0 +1,6 @@
+---
+- name: Check rdkit is already installed
+  stat: path=/usr/local/lib/libRDGeneral.so.1.{{ rdkit_version|replace("_", ".") }}
+  register: rdkit_installed
+- include: build_rdkit.yml
+  when: rdkit_installed.stat.islnk is not defined
