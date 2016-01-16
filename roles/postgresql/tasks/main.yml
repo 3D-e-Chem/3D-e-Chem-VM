@@ -16,5 +16,3 @@
       fsync = off               # turns forced synchronization on or off
       synchronous_commit = off      # immediate fsync at commit
       full_page_writes = off            # recover from partial page writes
-    notify:
-    - restart postgresql
