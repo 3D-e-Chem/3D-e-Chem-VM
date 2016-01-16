@@ -6,7 +6,7 @@
   args:
     creates: /etc/postgresql/created_user
 - name: Create postgresql database
-  shell: sudo -u postgres createdb --owner={{postgresql_role}} {{postgresql_role}} && /etc/postgresql/created_db
+  shell: sudo -u postgres createdb --owner={{postgresql_role}} {{postgresql_role}} && touch /etc/postgresql/created_db
   args:
     creates: /etc/postgresql/created_db
 - name: Tune postgresql
