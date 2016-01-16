@@ -48,6 +48,8 @@
   args:
     chdir: /opt/rdkit/rdkit-Release_{{ rdkit_version }}/Code/PgSQL/rdkit
     creates: /usr/lib/postgresql/9.3/lib/rdkit.so
+- name: Restart postgresql
+  service: name=postgresql state=restarted
 - name: Update ld config
   command: ldconfig
 - name: Clean up
