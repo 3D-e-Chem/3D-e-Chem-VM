@@ -7,4 +7,4 @@
 - name: ansible hosts file
   copy: src=ansible.hosts dest=/etc/ansible/hosts
 - name: upgrade script
-  copy: src=upgrade_cap dest=/usr/sbin/upgrade_cap mode="u=rwx,g=rx,o=rx"
+  copy: src=vagrant_upgrade dest=/usr/sbin/vagrant_upgrade mode="u=rwx,g=rx,o=rx"
