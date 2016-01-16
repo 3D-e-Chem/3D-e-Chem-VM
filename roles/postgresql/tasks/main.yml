@@ -1,3 +1,20 @@
 ---
 - name: Postgresql server & client
   apt: pkg=postgresql state=latest
+- name: Create postgresql user
+  shell: sudo -u postgres createuser {{postgresql_role}} && touch /opt/postgresql/created_user
+  args:
+    creates: /opt/postgresql/created_user
+- name: Create postgresql database
+  shell: sudo -u postgres createdb --owner={{postgresql_role}} {{postgresql_role}} && /opt/postgresql/created_db
+  args:
+    creates: /opt/postgresql/created_db
+- name: Tune postgresql
+  blockinfile:
+    dest: /etc/postgresql/9.3/main/postgresql.conf
+    block: |
+      fsync = off               # turns forced synchronization on or off
+      synchronous_commit = off      # immediate fsync at commit
+      full_page_writes = off            # recover from partial page writes
+    notify:
+    - restart postgresql
