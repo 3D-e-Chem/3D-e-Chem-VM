@@ -22,6 +22,7 @@ Requirements:
 * Atlas account, https://atlas.hashicorp.com
 * Enough disk space
   * Make sure temporary directory (/tmp by default on Linux) has enough space. Use TMPDIR environment variable to overwrite default location
+* OVF file (../Chemical-Analytics-Platform/output-virtualbox-iso/*.ovf) from build phase of https://github.com/NLeSC/Chemical-Analytics-Platform
 
 ```
 packer build packer.json

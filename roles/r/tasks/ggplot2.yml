@@ -1,2 +1,0 @@
-- name: ggplot2
-  command: install2.r -r {{ cran_url }} ggplot2 creates=/usr/local/lib/R/site-library/ggplot2

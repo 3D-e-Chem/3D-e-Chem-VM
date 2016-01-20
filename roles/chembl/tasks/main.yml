@@ -1,9 +1,0 @@
----
-- name: Add create script
-  template: src=chembldb_create.sh.j2 dest=/usr/local/bin/chembldb_create mode=755
-- name: Chembl directory
-  file: path=/opt/chembl state=directory
-- name: Add rdkit.sql script
-  copy: src=rdkit.sql dest=/opt/chembl/
-- name: Add user.sql script
-  copy: src=user.sql dest=/opt/chembl/

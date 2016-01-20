@@ -1,3 +1,0 @@
----
-- name: restart x
-  service: name=lightdm state=restarted
