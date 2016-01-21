@@ -1,5 +1,5 @@
 language: python
-sudo:false
+sudo: false
 cache: pip
 install: pip install ansible
 script: ansible-playbook -i roles/self-upgrade/files/ansible.hosts --syntax-check playbook.yml
