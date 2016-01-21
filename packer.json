@@ -5,7 +5,7 @@
     },
     "builders": [{
         "type": "virtualbox-ovf",
-        "source_path": "../Chemical-Analytics-Platform/output-virtualbox-iso/*.ovf",
+        "source_path": "../Chemical-Analytics-Platform/output-virtualbox-iso/cap.ova",
         "ssh_username": "{{user `ssh_name`}}",
         "ssh_password": "{{user `ssh_pass`}}",
         "shutdown_command": "echo {{user `ssh_pass`}} | sudo -S shutdown -P now",
@@ -16,8 +16,7 @@
             ["modifyvm", "{{.Name}}", "--draganddrop", "bidirectional"],
             ["modifyvm", "{{.Name}}", "--accelerate3d", "on"],
             ["modifyvm", "{{.Name}}", "--vram", "128"]
-        ],
-        "disk_size": 60000
+        ]
     }],
     "provisioners": [{
         "type": "ansible-local",
