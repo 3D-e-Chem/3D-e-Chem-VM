@@ -10,3 +10,7 @@ echo 'Machine will be reboot when required, start this script again to continue 
 cd /opt/playbook
 git pull
 ansible-playbook playbook.yml
+
+cd /opt/playbook-3d-e-chem
+git pull
+ansible-playbook playbook.yml

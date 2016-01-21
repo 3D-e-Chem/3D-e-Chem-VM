@@ -1,4 +1,4 @@
-# Gollum - Gollum wiki service
+# Gollum 3d-e-chem - Gollum wiki service
 #
 # Gollum wiki serves a Github style wiki as a web server
 
@@ -11,7 +11,7 @@ stop on runlevel [!2345]
 setuid gollum
 
 script
-  cd /opt/wiki
+  cd /opt/wiki-3d-e-chem
   git reset --hard
   git pull || true
   gollum --port {{ wiki_port }} --no-edit .
