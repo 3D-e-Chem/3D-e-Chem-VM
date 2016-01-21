@@ -24,9 +24,8 @@
         "extra_arguments": ["--become"],
         "playbook_file": "playbook.yml",
         "role_paths": [
-            "roles/bootstrap", "roles/fpocket", "roles/knime", "roles/lxde",
-            "roles/r", "roles/self-upgrade", "roles/virtualbox-guest-additions", "roles/wiki",
-            "roles/postgresql", "roles/rdkit", "roles/chembl"
+            "roles/self-upgrade", "roles/wiki", 
+            "roles/knime", "roles/kripo"
         ]
     }],
     "post-processors": [{

@@ -1,0 +1,3 @@
+---
+- include: updatesite.yml
+- include: plugins.yml

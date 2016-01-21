@@ -1,0 +1,6 @@
+---
+- pip: name=pip state=latest
+- pip: name=numpy
+- pip: name=cython
+# TODO change to release version when possible
+- pip: name=git+https://github.com/3D-e-Chem/python-modified-tanimoto.git
