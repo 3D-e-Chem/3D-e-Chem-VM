@@ -1,5 +1,8 @@
 ---
 - hosts: all
   roles:
+    - bootstrap
     - wiki
     - self-upgrade
+    - knime
+    - kripo

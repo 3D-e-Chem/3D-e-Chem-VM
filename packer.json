@@ -23,7 +23,8 @@
         "extra_arguments": ["--become"],
         "playbook_file": "playbook.yml",
         "role_paths": [
-            "roles/self-upgrade", "roles/wiki", 
+            "roles/bootstrap",
+            "roles/self-upgrade", "roles/wiki",
             "roles/knime", "roles/kripo"
         ]
     }],
