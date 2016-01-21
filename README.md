@@ -1,3 +1,7 @@
+# 3D e-Chem Virtual Machine
+
+[![Build Status](https://travis-ci.org/3D-e-Chem/3D-e-Chem-VM.svg?branch=master)](https://travis-ci.org/3D-e-Chem/3D-e-Chem-VM)
+
 Scripts to create a Vagrant box using packer and ansible.
 
 For available software/datasets/workflows inside Virtual machine see https://github.com/3D-e-Chem/3D-e-Chem-VM/wiki
