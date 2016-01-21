@@ -1,9 +1,9 @@
 ---
-- name: Copy knime plugin installer
-  template: src=plugin_installer.sh.j2 dest=/usr/bin/knime_plugin_installer.sh mode=u+rx
-- name: Install RDKIT wizards integration
-  command: /usr/bin/knime_plugin_installer.sh org.rdkit.knime.wizards.feature.feature.group
+- name: Install modified tanimoto distance
+  command: /usr/bin/knime_plugin_installer.sh nl.esciencecenter.e3dchem.modifiedtanimoto {{knime_repositories}}
   args:
-    creates: "{{ knime_root }}/org.rdkit.knime.wizards.feature.feature.group.installed"
-- name: Install OpenPHACTS integration
-  get_url: url="https://github.com/openphacts/OPS-Knime/raw/master/org.openphacts.utils.json_{{ ops_knime_version }}.zip" dest="{{ knime_root }}/dropins/org.openphacts.utils.json_{{ ops_knime_version }}.jar"
+    creates: "{{ knime_root }}/nl.esciencecenter.e3dchem.modifiedtanimoto"
+- name: Install GPCRDB nodes
+  command: /usr/bin/knime_plugin_installer.sh nl.esciencecenter.e3dchem.gpcrdb {{knime_repositories}}
+  args:
+    creates: "{{ knime_root }}/nl.esciencecenter.e3dchem.gpcrdb"

@@ -1,5 +1,0 @@
----
-- name: Autologin user
-  template: src=autologin.conf.j2 dest=/etc/lightdm/lightdm.conf.d/12-autologin.conf
-  notify:
-  - restart lightdm

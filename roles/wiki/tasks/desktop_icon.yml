@@ -5,7 +5,7 @@
     - firefox
 - service: name=gollum state=started
 - name: Add desktop icon for wiki
-  template: src=wiki.desktop.j2 dest=/usr/share/applications/wiki.desktop
+  template: src=wiki.desktop.j2 dest=/usr/share/applications/wiki-3d-e-chem.desktop
 - file: path="{{ desktop_dir }}" state=directory mode=0755  
 - name: Knime desktop icon
-  file: src=/usr/share/applications/wiki.desktop dest={{ desktop_dir }}/wiki.desktop state=link
+  file: src=/usr/share/applications/wiki-3d-e-chem.desktop dest={{ desktop_dir }}/wiki-3d-e-chem.desktop state=link
