@@ -1,5 +1,5 @@
 - name: github repo
-  git: repo="{{ repo_clone_url }}" dest=/opt/playbook
+  git: repo="{{ repo_clone_url }}" dest=/opt/playbook-3d-e-chem
 - name: ansible
   pip: name=ansible
 - name: create /etc/ansible directory

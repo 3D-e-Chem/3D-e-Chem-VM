@@ -1,7 +1,0 @@
----
-# These tasks adds a Knime icon to the desktop
-- name: Knime menu item
-  template: src=knime.desktop.j2 dest=/usr/share/applications/knime.desktop
-- file: path="{{ desktop_dir }}" state=directory mode=0755
-- name: Knime desktop icon
-  file: src=/usr/share/applications/knime.desktop dest={{ desktop_dir }}/knime.desktop state=link

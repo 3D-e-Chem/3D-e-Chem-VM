@@ -4,71 +4,28 @@
         "ssh_pass": "vagrant"
     },
     "builders": [{
-        "type": "virtualbox-iso",
-        "guest_os_type": "Ubuntu_64",
-        "iso_url": "http://nl.archive.ubuntu.com/ubuntu-cdimages/14.04/release/ubuntu-14.04.3-server-amd64+mac.iso",
-        "iso_checksum": "3b256b334233dd1537ed92ebd480e167",
-        "iso_checksum_type": "md5",
+        "type": "virtualbox-ovf",
+        "source_path": "../Chemical-Analytics-Platform/output-virtualbox-iso/cap.ova",
         "ssh_username": "{{user `ssh_name`}}",
         "ssh_password": "{{user `ssh_pass`}}",
         "shutdown_command": "echo {{user `ssh_pass`}} | sudo -S shutdown -P now",
         "guest_additions_mode": "disable",
-        "boot_wait": "5s",
-        "floppy_files": [
-            "preseed.cfg"
-        ],
-        "boot_command": [
-            "<esc><esc><enter><wait>",
-            "/install/vmlinuz ",
-            "preseed/file=/floppy/preseed.cfg ",
-            "debian-installer=en_US auto locale=en_US kbd-chooser/method=us ",
-            "hostname={{.Name}} ",
-            "fb=false debconf/frontend=noninteractive ",
-            "keyboard-configuration/modelcode=SKIP keyboard-configuration/layout=USA ",
-            "keyboard-configuration/variant=USA console-setup/ask_detect=false ",
-            "initrd=/install/initrd.gz -- <enter>"
-        ],
         "vboxmanage": [
             ["modifyvm", "{{.Name}}", "--memory", "2048"],
             ["modifyvm", "{{.Name}}", "--clipboard", "bidirectional"],
             ["modifyvm", "{{.Name}}", "--draganddrop", "bidirectional"],
             ["modifyvm", "{{.Name}}", "--accelerate3d", "on"],
             ["modifyvm", "{{.Name}}", "--vram", "128"]
-        ],
-        "disk_size": 60000
+        ]
     }],
-    "_comment": "Asible provisioner is repeated because a reboot is triggered to activate the new kernel",
     "provisioners": [{
-        "type": "shell",
-        "execute_command": "echo {{user `ssh_pass`}} | {{ .Vars }} sudo -E -S sh '{{ .Path }}'",
-        "inline": [
-            "apt-get install -y software-properties-common",
-            "apt-add-repository -y ppa:ansible/ansible",
-            "apt-get update",
-            "apt-get install -y ansible"
-        ]
-    }, {
-        "type": "shell",
-        "execute_command": "echo {{user `ssh_pass`}} | {{ .Vars }} sudo -E -S sh '{{ .Path }}'",
-        "inline": ["echo '{{user `ssh_name`}} ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers"]
-    }, {
         "type": "ansible-local",
         "extra_arguments": ["--become"],
         "playbook_file": "playbook.yml",
         "role_paths": [
-            "roles/bootstrap", "roles/fpocket", "roles/knime", "roles/lxde",
-            "roles/r", "roles/self-upgrade", "roles/virtualbox-guest-additions", "roles/wiki",
-            "roles/postgresql", "roles/rdkit", "roles/chembl"
-        ]
-    }, {
-        "type": "ansible-local",
-        "pause_before": "20s",
-        "extra_arguments": ["--become"],
-        "playbook_file": "playbook.yml",
-        "role_paths": [
-            "roles/bootstrap", "roles/fpocket", "roles/knime", "roles/lxde",
-            "roles/r", "roles/self-upgrade", "roles/virtualbox-guest-additions", "roles/wiki",
-            "roles/postgresql", "roles/rdkit", "roles/chembl"
+            "roles/bootstrap",
+            "roles/self-upgrade", "roles/wiki",
+            "roles/knime", "roles/kripo"
         ]
     }],
     "post-processors": [{

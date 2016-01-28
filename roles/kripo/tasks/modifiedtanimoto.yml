@@ -1,0 +1,10 @@
+---
+- name: Latest pip
+  pip: name=pip state=latest
+- name: Numpy
+  pip: name=numpy
+- name: Cython
+  pip: name=cython
+# TODO change to release version when possible
+- name: Pyhton modified tanimoto
+  pip: name='git+https://github.com/3D-e-Chem/python-modified-tanimoto.git' editable=false
