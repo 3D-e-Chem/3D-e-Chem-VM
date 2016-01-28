@@ -1,5 +1,7 @@
 Scripts to create a Vagrant box using packer and ansible.
 
+[![DOI](https://zenodo.org/badge/19641/3D-e-Chem/3D-e-Chem-VM.svg)](https://zenodo.org/badge/latestdoi/19641/3D-e-Chem/3D-e-Chem-VM)
+
 # Usage
 
 * VirtualBox, https://www.virtualbox.org
