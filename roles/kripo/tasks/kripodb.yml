@@ -7,4 +7,4 @@
   pip: name=numpy
 # TODO change to release version when possible
 - name: KripoDB
-  pip: name='git+hhttps://github.com/3D-e-Chem/kripodb.git' editable=false
+  pip: name='git+https://github.com/3D-e-Chem/kripodb.git' editable=false
