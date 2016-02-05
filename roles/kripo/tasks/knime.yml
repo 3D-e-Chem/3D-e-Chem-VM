@@ -1,3 +1,5 @@
 ---
 - name: Knime kripodb example workflow
-  unarchive: src={{ kripodb_example_url }} dest={{ knime_examples_root }} owner=vagrant group=vagrant creates={{ knime_examples_root }}/KripoDB
+  unarchive: src={{ kripodb_example_url }} dest={{ knime_examples_root }} creates={{ knime_examples_root }}/KripoDB copy=no
+- name: Vagrant owns the example
+  file: path={{ knime_examples_root }}/KripoDB state=directory recurse=yes owner=vagrant group=vagrant
