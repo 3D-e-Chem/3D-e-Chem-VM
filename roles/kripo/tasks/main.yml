@@ -1,2 +1,3 @@
 ---
 - include: kripodb.yml
+- include: knime.yml

@@ -3,8 +3,18 @@
   pip: name=pip state=latest
 - name: Latest setuptools
   pip: name=setuptools state=latest
+- name: HDF5 dev
+  apt: name=libhdf5-dev state=present
 - name: Numpy
   pip: name=numpy
 # TODO change to release version when possible
-- name: KripoDB
+- name: KripoDB python package
   pip: name='git+https://github.com/3D-e-Chem/kripodb.git' editable=false
+- name: /data/kripo directory
+  file: path=/data/kripo/tiny state=directory
+- name: Sample data
+  get_url: url=https://raw.githubusercontent.com/3D-e-Chem/kripodb/master/data/{{ item }} dest=/data/kripo/tiny
+  with_items:
+    - fragments.sqlite
+    - fingerprints.sqlite
+    - distances.h5

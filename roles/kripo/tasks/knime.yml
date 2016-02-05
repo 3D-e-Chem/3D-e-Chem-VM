@@ -1,0 +1,3 @@
+---
+- name: Knime kripodb example workflow
+  unarchive: src={{ kripodb_example_url }} dest={{ knime_examples_root }} owner=vagrant group=vagrant creates={{ knime_examples_root }}/KripoDB
