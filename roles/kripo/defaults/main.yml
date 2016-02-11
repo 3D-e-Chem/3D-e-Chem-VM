@@ -1,4 +1,4 @@
 ---
-knime_examples_root: /home/vagrant/knime-workspace/3D-e-Chem-Examples
 kripodb_version: 1.2.0
-kripodb_example_url: https://github.com/3D-e-Chem/kripodb/blob/{{ kripodb_version }}/Knime-KripoDB-example.zip?raw=true
+example_url: https://github.com/3D-e-Chem/kripodb/blob/{{ kripodb_version }}/Knime-KripoDB-example.zip?raw=true
+example_dir: '{{ knime_examples_root }}/KripoDB'
