@@ -5,12 +5,6 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-echo 'Machine will be reboot when required, start this script again to continue upgrading'
-
-cd /opt/playbook
-git pull
-ansible-playbook playbook.yml
-
 cd /opt/playbook-3d-e-chem
 git pull
 ansible-playbook playbook.yml

@@ -1,10 +1,4 @@
 - name: github repo
   git: repo="{{ repo_clone_url }}" dest=/opt/playbook-3d-e-chem
-- name: ansible
-  pip: name=ansible
-- name: create /etc/ansible directory
-  file: path=/etc/ansible state=directory
-- name: ansible hosts file
-  copy: src=ansible.hosts dest=/etc/ansible/hosts
 - name: upgrade script
-  copy: src=vagrant_upgrade dest=/usr/sbin/vagrant_upgrade mode="u=rwx,g=rx,o=rx"
+  copy: src=vagrant_upgrade dest=/etc/vagrant_upgrade.d/3d-e-chem.sh mode="u=rwx,g=rx,o=rx"
