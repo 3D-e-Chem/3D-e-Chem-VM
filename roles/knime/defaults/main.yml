@@ -3,4 +3,4 @@ knime_version: 3.1.1
 knime_root: /opt/knime/knime-full_{{ knime_version }}
 knime_repositories: https://3d-e-chem.github.io/updates
 knime_examples_root: /home/vagrant/knime-workspace/3D-e-Chem-Examples
-knime_nr_of_examples: 3
+knime_nr_of_examples: 4
