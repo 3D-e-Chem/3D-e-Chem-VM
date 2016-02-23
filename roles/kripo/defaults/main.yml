@@ -1,4 +1,4 @@
 ---
-kripodb_version: 1.2.2
+kripodb_version: v1.2.2
 example_url: https://github.com/3D-e-Chem/kripodb/blob/{{ kripodb_version }}/Knime-KripoDB-example.zip?raw=true
 example_dir: '{{ knime_examples_root }}/KripoDB'
