@@ -25,7 +25,8 @@
         "role_paths": [
             "roles/bootstrap",
             "roles/self-upgrade", "roles/wiki",
-            "roles/knime", "roles/kripo"
+            "roles/knime", "roles/kripo",
+            "roles/modifiedtanimoto", "roles/gpcrdb"
         ]
     }],
     "post-processors": [{
