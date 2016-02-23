@@ -30,7 +30,7 @@ layout: default
   {% for release in site.github.releases %}
   <li>
     <h3><a href="{{ release.html_url }}">{{ release.name }}</a> ({{ release.published_at | date_to_string }})</h3>
-    <p markdown="1">{{ release.body }}</p>
+    <p>{{ release.body | markdownify }}</p>
   </li>
   {% endfor %}
   </ul>
