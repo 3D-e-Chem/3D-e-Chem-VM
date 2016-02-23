@@ -1,0 +1,7 @@
+# Site settings
+title: 3D-e-Chem VM
+description: Virtual machine with all software and sample data to run 3D-e-Chem Knime workflows
+baseurl: "" # the subpath of your site, e.g. /blog/
+
+# Build settings
+markdown: kramdown
