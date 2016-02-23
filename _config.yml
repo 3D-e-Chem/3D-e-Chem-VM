@@ -1,7 +1,8 @@
 # Site settings
 title: 3D-e-Chem VM
 description: Virtual machine with all software and sample data to run 3D-e-Chem Knime workflows
-baseurl: /3D-e-Chem-VM/
+baseurl: /3D-e-Chem-VM
+# Url of project website, repo owner name will be used as project name
 project_url: http://3d-e-chem.github.io
 
 # Build settings
