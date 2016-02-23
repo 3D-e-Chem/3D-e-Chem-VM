@@ -6,6 +6,6 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.github.project_title }}{% endif %}</title>
     <meta name="description" content="{{ site.github.project_tagline }}">
 
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.github.url }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.github.url }}">
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 </head>

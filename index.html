@@ -3,6 +3,10 @@ layout: default
 ---
 
 <div class="home">
+  <figure>
+    <img title="Snapshot of 3D e-chem Virtual Machine" src="{{ site.baseurl }}/images/3d-e-chem-vm-screenshot.png"/>
+  </figure>
+
   <p>
   3D-e-chem VM is freely available Virtual Machine (VM) encompassing tools, databases & workflows,
   including new resources developed for ligand binding site comparisons and GPCR research.
@@ -14,21 +18,21 @@ layout: default
   in the downloadable 3D-e-chem VM allowing immediate use in research and education.
   </p>
 
+  <ul>
+    <li><a href="https://atlas.hashicorp.com/nlesc/boxes/3d-e-chem">Download</a></li>
+    <li><a href="{{ site.github.repository_url }}">Github</a></li>
+    <li><a href="{{ site.github.wiki_url }}">Documentation</a></li>
+    <li><a href="{{ site.github.issues_url}}">Issue tracker</a></li>
+  </ul>
+
   <h2>Releases</h2>
   <ul>
   {% for release in site.github.releases %}
   <li>
-    <h3><a href="{{ release.url }}">{{ release.name }}</a> ({{ release.published_at | date_to_string }})</h3>
-    <p>{{ release.body }}</p>
+    <h3><a href="{{ release.html_url }}">{{ release.name }}</a> ({{ release.published_at | date_to_string }})</h3>
+    <p markdown="1">{{ release.body }}</p>
   </li>
   {% endfor %}
   </ul>
 
-  <ul>
-    <li><a href="https://atlas.hashicorp.com/nlesc/boxes/3d-e-chem">Download</a></li>
-    <li><a href="{{ site.github.repository_url }}">Source code</a></li>
-    <li><a href="{{ site.github.wiki_url }}">Documentation</a></li>
-    <li><a href="{{ site.github.issues_url}}">Issue tracker</a></li>
-    <li>Part of <a href="{{ site.project_url }}">{{ site.github.owner }}</a> project</li>
-  </ul>
 </div>
