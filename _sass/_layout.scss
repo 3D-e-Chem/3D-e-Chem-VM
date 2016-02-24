@@ -39,7 +39,12 @@
         &:not(:first-child) {
             margin-left: 20px;
         }
+
+        .mega-octicon {
+            vertical-align: middle;
+        }
     }
+
 
     @include media-query($on-palm) {
         position: absolute;
@@ -156,7 +161,26 @@
     }
 }
 
-
+.partner-logos img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: all 0.15s ease-in-out 0s;
+  -ms-transition: all 0.15s ease-in-out 0s;
+  -moz-transition: all 0.15s ease-in-out 0s;
+  -webkit-transition: all 0.15s ease-in-out 0s;
+}
+.partner-logos img:hover {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
+  opacity: 1;
+  transition: all 0.15s ease-in-out 0s;
+  -ms-transition: all 0.15s ease-in-out 0s;
+  -moz-transition: all 0.15s ease-in-out 0s;
+  -webkit-transition: all 0.15s ease-in-out 0s;
+}
 
 /**
  * Page content
