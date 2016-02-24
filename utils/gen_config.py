@@ -46,7 +46,7 @@ config = {
         'utils',
     ],
     'keep_files': [
-        'images'
+        'assets'
     ]
 }
 

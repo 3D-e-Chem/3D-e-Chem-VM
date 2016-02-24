@@ -33,7 +33,7 @@ partners:
 # Build settings
 markdown: kramdown
 keep_files:
-  - images
+  - assets
 excludes:
   - README.md
   - utils
