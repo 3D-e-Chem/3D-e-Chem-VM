@@ -2,7 +2,11 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.github.project_title }}</a>
+    <div class="site-titles">
+      <a title="Part of {{ site.project_name }} project" href="{{ site.urls.project }}">{{ site.project_name }}</a>
+      /
+      <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    </div>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -14,10 +18,15 @@
       </a>
 
       <div class="trigger">
-        <a class="page-link" href="https://atlas.hashicorp.com/nlesc/boxes/3d-e-chem" title="Download"><span class="mega-octicon octicon-cloud-download"></span></a>
-        <a class="page-link" href="{{ site.github.wiki_url }}" title="Documentation"><span class="mega-octicon octicon-book"></span></a>
-        <a class="page-link" href="{{ site.github.issues_url }}" title="Issue tracker"><span class="mega-octicon octicon-checklist"></span></a>
-        <a class="page-link" href="{{ site.github.repository_url }}" title="Github"><span class="mega-octicon octicon-mark-github"></span></a>
+        {% if site.urls.download %}
+        <a class="page-link" href="{{ site.urls.download }}"><span class="mega-octicon octicon-cloud-download"></span></a>
+        {% endif %}
+        {% if site.urls.docs %}
+        <a class="page-link" href="{{ site.urls.docs }}" title="Documentation"><span class="mega-octicon octicon-book"></span></a>
+        {% endif %}
+        {% if site.urls.repo %}
+        <a class="page-link" href="{{ site.urls.repo }}" title="Github"><span class="mega-octicon octicon-mark-github"></span></a>
+        {% endif %}
         {% for page in site.pages %}
           {% if page.title %}
           <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>

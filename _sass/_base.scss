@@ -1,3 +1,25 @@
+@font-face {
+  font-family: 'Akkurat';
+  src: url('//www.esciencecenter.nl/fonts/akkurat/lineto-akkurat-light.eot');
+  src: url('//www.esciencecenter.nl/fonts/akkurat/lineto-akkurat-light.eot?#iefix') format('embedded-opentype'), url('../fonts/akkurat/lineto-akkurat-light.woff') format('woff'), url('../fonts/akkurat/lineto-akkurat-light.ttf') format('truetype'), url('../fonts/akkurat/lineto-akkurat-light.svg#akkuratlight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Akkurat';
+  src: url('//www.esciencecenter.nl/fonts/akkurat/lineto-akkurat-regular.eot');
+  src: url('//www.esciencecenter.nl/fonts/akkurat/lineto-akkurat-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/akkurat/lineto-akkurat-regular.woff') format('woff'), url('../fonts/akkurat/lineto-akkurat-regular.ttf') format('truetype'), url('../fonts/akkurat/lineto-akkurat-regular.svg#akkuratregular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Akkurat';
+  src: url('//www.esciencecenter.nl/fonts/akkurat/lineto-akkurat-bold.eot');
+  src: url('//www.esciencecenter.nl/fonts/akkurat/lineto-akkurat-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/akkurat/lineto-akkurat-bold.woff') format('woff'), url('../fonts/akkurat/lineto-akkurat-bold.ttf') format('truetype'), url('../fonts/akkurat/lineto-akkurat-bold.svg#akkuratbold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
 /**
  * Reset some basic elements
  */

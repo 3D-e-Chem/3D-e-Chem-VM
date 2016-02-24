@@ -1,10 +1,40 @@
 # Site settings
-title: 3D-e-Chem VM
+title: 3D-e-Chem-VM
 description: Virtual machine with all software and sample data to run 3D-e-Chem Knime workflows
 baseurl: /3D-e-Chem-VM
-# Url of project website, repo owner name will be used as project name
-project_url: https://3d-e-chem.github.io
-url: https://3d-e-chem.github.io
+project_name: 3d-e-chem
+urls:
+  changelog: https://github.com/3D-e-Chem/3D-e-Chem-VM/blob/master/CHANGELOG.md
+  docs: https://github.com/3D-e-Chem/3D-e-Chem-VM/wiki
+  #download: https://github.com/3D-e-Chem/3D-e-Chem-VM/releases/latest
+  download: https://atlas.hashicorp.com/nlesc/boxes/3d-e-chem
+  issues: https://github.com/3D-e-Chem/3D-e-Chem-VM/issues
+  # project: <FIXME>
+  project: https://3d-e-chem.github.io
+  repo: https://github.com/3D-e-Chem/3D-e-Chem-VM
+languages:
+  - Shell
+  - Smarty
+license: Apache License 2.0
+partners:
+  - url: https://www.esciencecenter.nl
+    logo_url: https://www.esciencecenter.nl/img/pressroom/ESCIENCE_logo_C_nl_cyanblack.jpg
+  # - url: <FIXME>
+  #   logo_url: <FIXME>
+  - url: https://www.vu.nl
+    logo_url: https://www.esciencecenter.nl/img/partners/VUlogo_EN_Wit_HR_RGB_tcm9-201385.png
+  - url: https://www.radboudumc.nl
+    logo_url: https://www.esciencecenter.nl/img/partners/ru-eng-pms1805-a4.jpg
+
+# Optional settings
+# email: <contact email>
+# twitter_username: <twitter_username>#
 
 # Build settings
 markdown: kramdown
+keep_files:
+  - images
+excludes:
+  - README.md
+  - utils
+  - env

@@ -10,32 +10,30 @@ layout: default
   <p>
   3D-e-chem VM is freely available Virtual Machine (VM) encompassing tools, databases & workflows,
   including new resources developed for ligand binding site comparisons and GPCR research.
+  </p>
+  <p>
   The VM contains a fully functional cheminformatics infrastructure consisting of a
   chemistry enabled relational database system (<a href="http://www.postgresql.org/">PostgreSQL</a> + <a href="http://www.rdkit.org/">RDKit</a>) with a
   data analytics workflow tool (<a href="https://www.knime.org/">KNIME</a>) and additional cheminformatics capabilities.
+  </p>
+  <p>
   Tools, workflows and reference data sets are made available.
   The wide range of cheminformatics functionalities are provided
   in the downloadable 3D-e-chem VM allowing immediate use in research and education.
   </p>
 
   <ul>
-    <li><a href="https://atlas.hashicorp.com/nlesc/boxes/3d-e-chem">Download</a></li>
-    <li><a href="{{ site.github.wiki_url }}">Documentation</a></li>
-    <li><a href="{{ site.github.issues_url }}">Issue tracker</a></li>
-    <li><a href="{{ site.github.repository_url }}">Github</a></li>
+    {% if site.urls.download %}
+    <li><a class="page-link" href="{{ site.urls.download }}"><span class="octicon octicon-cloud-download"></span>&nbsp;Download</a></li>
+    {% endif %}
+    {% if site.urls.docs %}
+    <li><a class="page-link" href="{{ site.urls.docs }}" title="Documentation"><span class="octicon octicon-book"></span>&nbsp;Documentation</a></li>
+    {% endif %}
+    {% if site.urls.repo %}
+    <li><a class="page-link" href="{{ site.urls.repo }}" title="Github"><span class="octicon octicon-mark-github"></span>&nbsp;GitHub</a></li>
+    {% endif %}
+    {% if site.urls.changelog %}
+    <li><a href="{{ site.urls.changelog }}"><span class="octicon octicon-list-ordered"></span>&nbsp;Changelog</a></li>
+    {% endif %}
   </ul>
-
-<!--
-{{ site.github | debug }}
--->
-
-  <h2>Releases</h2>
-  <ul>
-  {% for release in site.github.releases %}
-  <li>
-    <a href="{{ release.html_url }}">{{ release.name }}</a> ({{ release.published_at | date_to_string }})
-  </li>
-  {% endfor %}
-  </ul>
-
 </div>
