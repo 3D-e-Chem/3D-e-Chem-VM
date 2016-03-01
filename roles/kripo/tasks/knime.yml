@@ -1,0 +1,3 @@
+---
+- name: Install latest kripodb python templates for Knime
+  command: /usr/bin/knime_plugin_installer.sh nl.esciencecenter.e3dchem.kripodb.plugin {{knime_repositories}}
