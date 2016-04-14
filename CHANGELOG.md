@@ -6,9 +6,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
-* Updated Knime to 3.1.1
+* Updated Knime to 3.1.2
 * Updated Ubuntu to 14.04.4
-* Updated KripoDB to 1.2.6
+* Updated KripoDB to 1.3.0
 
 ## [1.0.2] - 2016-01-23
 
