@@ -1,7 +1,12 @@
 ---
-- name: Sample data
+- name: Tiny sample data
   get_url: url=https://github.com/3D-e-Chem/kripodb/blob/{{ kripodb_version }}/data/{{ item }}?raw=true dest=/data/kripo/tiny
   with_items:
     - fragments.sqlite
     - fingerprints.sqlite
     - distances.h5
+- name: GPCR sample data
+  get_url: '{{ kripo_dataset_gpcr }}{{ item }}' dest=/data/kripo/gpcr
+  with_items:
+    - kripo.gpcrandhits.sqlite
+    - kripo.gpcr.h5
