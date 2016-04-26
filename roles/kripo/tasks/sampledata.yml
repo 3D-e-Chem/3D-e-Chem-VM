@@ -11,8 +11,7 @@
   file: path=/data/kripo/tiny state=directory
 - name: /data/kripo/gpcr directory
   file: path=/data/kripo/gpcr state=directory
-- name: GPCR sample data
-  get_url: url='{{ kripo_dataset_gpcr }}{{ item }}' dest=/data/kripo/gpcr
-  with_items:
-    - kripo.gpcrandhits.sqlite
-    - kripo.gpcr.h5
+- name: GPCR fragment sample data
+  get_url: url='{{ kripo_dataset_gpcr }}kripo.gpcrandhits.sqlite' dest=/data/kripo/gpcr/kripo.gpcrandhits.sqlite
+- name: GPCR distance sample data
+  get_url: url='{{ kripo_dataset_gpcr }}kripo.gpcr.h5' dest=/data/kripo/gpcr/kripo.gpcr.h5
