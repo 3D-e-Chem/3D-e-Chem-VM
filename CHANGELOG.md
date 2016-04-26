@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+* Kripodb GPCR sample dataset
+
 ### Changed
 
 * Updated Knime to 3.1.2

@@ -1,7 +1,17 @@
 ---
-- name: Sample data
+- name: /data/kripo/tiny directory
+  file: path=/data/kripo/tiny state=directory
+- name: Tiny sample data
   get_url: url=https://github.com/3D-e-Chem/kripodb/blob/{{ kripodb_version }}/data/{{ item }}?raw=true dest=/data/kripo/tiny
   with_items:
     - fragments.sqlite
     - fingerprints.sqlite
     - distances.h5
+- name: /data/kripo directory
+  file: path=/data/kripo/tiny state=directory
+- name: /data/kripo/gpcr directory
+  file: path=/data/kripo/gpcr state=directory
+- name: GPCR fragment sample data
+  get_url: url='{{ kripo_dataset_gpcr }}kripo.gpcrandhits.sqlite' dest=/data/kripo/gpcr/kripo.gpcrandhits.sqlite
+- name: GPCR distance sample data
+  get_url: url='{{ kripo_dataset_gpcr }}kripo.gpcr.h5' dest=/data/kripo/gpcr/kripo.gpcr.h5
