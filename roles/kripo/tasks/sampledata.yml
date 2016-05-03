@@ -12,6 +12,6 @@
 - name: /data/kripo/gpcr directory
   file: path=/data/kripo/gpcr state=directory
 - name: GPCR fragment sample data
-  get_url: url='{{ kripo_dataset_gpcr }}kripo.gpcrandhits.sqlite' dest=/data/kripo/gpcr/kripo.gpcrandhits.sqlite
+  get_url: url='{{ kripo_dataset_gpcr }}kripo.gpcrandhits.sqlite' dest=/data/kripo/gpcr/kripo.gpcrandhits.sqlite timeout=600
 - name: GPCR distance sample data
-  get_url: url='{{ kripo_dataset_gpcr }}kripo.gpcr.h5' dest=/data/kripo/gpcr/kripo.gpcr.h5
+  get_url: url='{{ kripo_dataset_gpcr }}kripo.gpcr.h5' dest=/data/kripo/gpcr/kripo.gpcr.h5 timeout=600
