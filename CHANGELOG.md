@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.0.3] - 2016-05-03
+
 ### Added
 
 * Kripodb GPCR sample dataset
@@ -12,7 +14,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 * Updated Knime to 3.1.2
 * Updated Ubuntu to 14.04.4
-* Updated KripoDB to 1.3.0
+* Updated KripoDB to 1.4.0
 
 ## [1.0.2] - 2016-01-23
 
