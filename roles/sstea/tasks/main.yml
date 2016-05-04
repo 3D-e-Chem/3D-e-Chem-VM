@@ -1,0 +1,5 @@
+---
+- name: Install latest ss-TEA node
+  command: /usr/bin/knime_plugin_installer.sh nl.esciencecenter.e3dchem.sstea.plugin {{knime_repositories}}
+- name: Knime example workflow for ss-TEA node
+  unarchive: src={{ example_url}} dest={{ knime_examples_root }} creates={{ example_dir }} copy=no

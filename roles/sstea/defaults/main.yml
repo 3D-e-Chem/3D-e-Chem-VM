@@ -1,0 +1,2 @@
+example_url: https://github.com/3D-e-Chem/knime-sstea/blob/master/examples/ss-TEA-example.zip
+example_dir: '{{ knime_examples_root }}/ss-TEA example'
