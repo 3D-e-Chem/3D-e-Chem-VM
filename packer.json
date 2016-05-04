@@ -26,7 +26,8 @@
             "roles/bootstrap",
             "roles/self-upgrade", "roles/wiki",
             "roles/knime", "roles/kripo",
-            "roles/modifiedtanimoto", "roles/gpcrdb"
+            "roles/modifiedtanimoto", "roles/gpcrdb",
+            "roles/sstea"
         ]
     }],
     "post-processors": [{
