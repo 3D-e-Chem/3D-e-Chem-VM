@@ -1,7 +1,7 @@
 ---
 - user: name=gollum system=yes state=present
 - name: Install Gollum init script
-  template: src=init/gollum.conf.j2 dest=/etc/init/gollum-3d-e-chem.conf mode=u+rw,go+r
+  template: src=systemd/gollum.service.j2 dest=/lib/systemd/system/gollum-3d-e-chem.service mode=u+rw,go+r
 - name: Install git
   apt: pkg=git state=present
 - name: Cloning Github wiki
