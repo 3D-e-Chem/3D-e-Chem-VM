@@ -1,0 +1,14 @@
+[Unit]
+Description=Gollum 3d-e-chem - Gollum wiki service
+After=network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/wiki-3d-e-chem
+User=gollum
+ExecStartPre=/usr/bin/git reset --hard
+ExecStartPre=/usr/bin/git pull
+ExecStart=/usr/local/bin/gollum --port {{ wiki_port }} --no-edit .
+
+[Install]
+WantedBy=multi-user.target
