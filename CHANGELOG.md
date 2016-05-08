@@ -4,6 +4,16 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.1.0] - 2016-05-07
+
+### Changed
+
+* Based on Chemical Analytics Platform 0.8.0
+* Upgraded RDKit to 2016.03.1
+* Upgraded Ubuntu to 16.04
+* Upgraded Knime to v3.1.2
+* Upgraded Virtualbox Guest Additions to v5.0.20
+
 ### Added
 
 * ss-TEA Knime node
