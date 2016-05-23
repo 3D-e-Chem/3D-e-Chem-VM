@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+* Chemdb4VS workflow 
+
 ## [1.1.0] - 2016-05-07
 
 ### Changed
