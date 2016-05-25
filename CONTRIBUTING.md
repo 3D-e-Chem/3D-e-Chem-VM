@@ -5,7 +5,7 @@ agree to abide by the [code of conduct](CODE_OF_CONDUCT.md).
 
 Fork, then clone the repo:
 
-    git clone git@github.com:your-username/factory_girl_rails.git
+    git clone git@github.com:your-username/3D-e-Chem-VM.git
 
 Set up your machine:
 
