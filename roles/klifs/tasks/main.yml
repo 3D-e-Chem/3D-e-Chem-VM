@@ -1,0 +1,3 @@
+---
+- name: Install latest Klifs nodes
+  command: /usr/bin/knime_plugin_installer.sh nl.vu_compmedchem.klifs {{knime_repositories}}

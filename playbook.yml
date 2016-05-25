@@ -10,6 +10,7 @@
     - kripo
     - sstea
     - chemdb4vs
+    - klifs
   tasks:
     - name: Vagrant owns Knime
       file: path=/opt/knime state=directory recurse=yes owner=vagrant group=vagrant
