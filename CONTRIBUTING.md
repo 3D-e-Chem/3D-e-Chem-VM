@@ -11,13 +11,15 @@ Set up your machine:
 
     pip install ansible
 
-Make sure the tests pass:
+Make sure the syntax check is OK:
 
     ansible-playbook -i localhost, --syntax-check playbook.yml
 
-Make your change. Add tests for your change. Make the tests pass:
+Make your change. Make the syntax check pass:
 
     ansible-playbook -i localhost, --syntax-check playbook.yml
+
+Optionally test the change works by building a Vagrant box and testing it as explained in [README.md#Build](README.md#build) and [README.md#Test](README.md#test) respectivly.
 
 Push to your fork and [submit a pull request](https://github.com/3D-e-Chem/3D-e-Chem-VM/compare/).
 
