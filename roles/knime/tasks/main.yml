@@ -1,3 +1,4 @@
 ---
 - include: updatesite.yml
 - include: examples.yml
+- include: workflows.yml

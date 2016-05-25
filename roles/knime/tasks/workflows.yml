@@ -1,0 +1,7 @@
+---
+- name: 3D-e-Chem Workflows directory in workspace
+  file: path={{ knime_workflows_root }} state=directory owner=vagrant group=vagrant
+- name: 3D-e-Chem Workflows meta file
+  template: src=workflowset4workflows.meta dest='{{ knime_workflows_root }}/workflowset.meta' owner=vagrant group=vagrant
+- name: 3D-e-Chem Workflows workflowset file
+  copy: src=workflows.project dest='{{ knime_workflows_root }}/.project' owner=vagrant group=vagrant
