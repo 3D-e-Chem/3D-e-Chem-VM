@@ -11,13 +11,19 @@ Set up your machine:
 
     pip install ansible
 
-Make sure the tests pass:
+And install packer see https://www.packer.io/downloads.html for instructions.
+
+Make sure the syntax checks pass:
 
     ansible-playbook -i localhost, --syntax-check playbook.yml
+    packer validate -syntax-only packer.json
 
-Make your change. Add tests for your change. Make the tests pass:
+Make your change. Make the syntax checks pass:
 
     ansible-playbook -i localhost, --syntax-check playbook.yml
+    packer validate -syntax-only packer.json
+
+Optionally test the change works by building a Vagrant box and testing it manually as explained in [README.md#Build](README.md#build) and [README.md#Test](README.md#test) chapters respectively.
 
 Push to your fork and [submit a pull request](https://github.com/3D-e-Chem/3D-e-Chem-VM/compare/).
 

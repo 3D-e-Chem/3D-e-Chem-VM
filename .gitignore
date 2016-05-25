@@ -6,3 +6,7 @@ packer_virtualbox-ovf_virtualbox.box
 bin/
 
 .idea
+
+env
+packer
+packer_*.zip
