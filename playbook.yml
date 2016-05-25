@@ -16,3 +16,5 @@
       file: path=/opt/knime state=directory recurse=yes owner=vagrant group=vagrant
     - name: Vagrant owns Knime workspace examples
       file: path='{{ knime_examples_root }}' state=directory recurse=yes owner=vagrant group=vagrant
+    - name: Vagrant owns Knime workspace workflows
+      file: path='{{ knime_workflows_root }}' state=directory recurse=yes owner=vagrant group=vagrant
