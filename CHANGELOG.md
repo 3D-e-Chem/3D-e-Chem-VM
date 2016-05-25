@@ -6,7 +6,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
-* Chemdb4VS workflow 
+* Chemdb4VS workflow
+* Klifs Knime nodes
 
 ## [1.1.0] - 2016-05-07
 
