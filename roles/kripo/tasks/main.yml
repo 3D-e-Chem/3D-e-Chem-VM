@@ -3,3 +3,4 @@
 - include: example.yml
 - include: knime.yml
 - include: sampledata.yml
+- include: pdbdata.yml

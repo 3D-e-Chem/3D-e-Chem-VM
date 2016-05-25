@@ -8,6 +8,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 * Chemdb4VS workflow
 * Klifs Knime nodes
+* Added Kripo fragments db for whole PDB
 
 ## [1.1.0] - 2016-05-07
 
