@@ -1,6 +1,5 @@
 ---
 kripodb_version: v1.4.2
 example_url: https://github.com/3D-e-Chem/knime-kripodb/blob/master/examples/Knime-KripoDB-example.zip?raw=true
-example_dir: '{{ knime_examples_root }}/KripoDB'
 kripo_dataset_gpcr: https://zenodo.org/record/50835/files/
 kripo_dataset_pdb: https://surfdrive.surf.nl/files/index.php/s/ljQIn3itAbquHd2/download

@@ -13,6 +13,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 
 * Updated KripoDB to 1.4.2
+* Workflow examples are always downloaded to force latest version.
 
 ## [1.1.0] - 2016-05-07
 
