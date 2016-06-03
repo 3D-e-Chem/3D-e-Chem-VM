@@ -10,6 +10,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 * Klifs Knime nodes
 * Kripo fragments db for whole PDB
 
+### Changed
+
+* Updated KripoDB to 1.4.2
+
 ## [1.1.0] - 2016-05-07
 
 ### Changed
