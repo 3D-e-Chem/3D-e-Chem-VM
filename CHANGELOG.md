@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fixed
+
+* Modified tanimoto node install fails (#17)
+
 ### Added
 
 * Chemdb4VS workflow
