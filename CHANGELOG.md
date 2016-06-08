@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.1.1] - 2016-06-08
+
 ### Fixed
 
 * Modified tanimoto node install fails (#17)
