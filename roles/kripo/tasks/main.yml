@@ -5,3 +5,4 @@
 - include: sampledata.yml
 - include: pdbdata.yml
 - include: workflows.yml
+- include: pymol.yml

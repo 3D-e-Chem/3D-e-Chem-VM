@@ -3,3 +3,7 @@
   command: /usr/bin/knime_plugin_installer.sh nl.esciencecenter.e3dchem.gpcrdb {{knime_repositories}}
 - name: Knime example workflow for GPCRDB nodes
   unarchive: src={{ example_url}} dest={{ knime_examples_root }} copy=no
+- name: /data/gpcrdb Directory
+  file: path=/data/gpcrdb state=directory owner=vagrant group=vagrant
+- name: Pymol session of crystallized aminergic receptors
+  get_url: url='https://surfdrive.surf.nl/files/index.php/s/6HrEakJ52Qd7PQM/download?path=%2F&files=aminergic_alignment.pse' dest=/data/gpcrdb/aminergic_alignment.pse timeout=600

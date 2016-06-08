@@ -1,0 +1,3 @@
+---
+- name: Pymol session with 3rze + 2aot Kripo fragment alignment
+  get_url: url='https://surfdrive.surf.nl/files/index.php/s/6HrEakJ52Qd7PQM/download?path=%2F&files=KRIPO_3rze_2aot.pse' dest=/data/kripo/KRIPO_3rze_2aot.pse timeout=600

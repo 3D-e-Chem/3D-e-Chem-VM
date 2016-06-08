@@ -14,6 +14,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 * Klifs Knime nodes & example workflow (#14)
 * Kripo fragments db for whole PDB
 * Kripo bioisosteric replacement workflow (#16)
+* Pymol sessions for Kripo and GPCRDB published (#18)
 
 ### Changed
 
