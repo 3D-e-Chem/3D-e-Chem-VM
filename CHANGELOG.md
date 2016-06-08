@@ -7,8 +7,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 
 * Chemdb4VS workflow
-* Klifs Knime nodes
+* Klifs Knime nodes & example workflow (#14)
 * Kripo fragments db for whole PDB
+* Kripo bioisosteric replacement workflow (#16)
 
 ### Changed
 
@@ -33,7 +34,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
-* Kripodb GPCR sample dataset
+* Kripodb GPCR sample dataset (#12)
 
 ### Changed
 

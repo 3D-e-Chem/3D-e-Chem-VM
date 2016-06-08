@@ -6,4 +6,4 @@ knime_repositories: https://3d-e-chem.github.io/updates,http://update.knime.org/
 knime_examples_root: /home/vagrant/knime-workspace/3D-e-Chem-Examples
 knime_nr_of_examples: 5
 knime_workflows_root: /home/vagrant/knime-workspace/3D-e-Chem-Workflows
-knime_nr_of_workflows: 1
+knime_nr_of_workflows: 2
