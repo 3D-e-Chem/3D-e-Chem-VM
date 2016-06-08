@@ -1,0 +1,4 @@
+---
+- name: Knime 3D-e-Chem workflow for KripoDB
+  unarchive: src={{ item }} dest={{ knime_workflows_root }} copy=no
+  with_items: "{{ workflow_urls }}"

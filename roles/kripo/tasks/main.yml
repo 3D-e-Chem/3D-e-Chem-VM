@@ -4,3 +4,4 @@
 - include: knime.yml
 - include: sampledata.yml
 - include: pdbdata.yml
+- include: workflows.yml
