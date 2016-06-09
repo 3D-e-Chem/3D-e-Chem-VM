@@ -4,4 +4,4 @@ example_url: https://github.com/3D-e-Chem/knime-kripodb/blob/master/examples/Kni
 workflow_urls:
   - https://github.com/3D-e-Chem/knime-kripodb/blob/master/examples/KRIPO_bioisosteric_replacement_workflow.zip?raw=true
 kripo_dataset_gpcr: https://zenodo.org/record/50835/files/
-kripo_dataset_pdb: https://surfdrive.surf.nl/files/index.php/s/ljQIn3itAbquHd2/download
+kripo_dataset_pdb: https://zenodo.org/record/55254/files/Kripo20151223.sqlite
