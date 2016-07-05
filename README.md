@@ -12,7 +12,7 @@ For available software/datasets/workflows inside Virtual machine see https://git
 * VirtualBox, https://www.virtualbox.org
 * Vagrant, https://www.vagrantup.com
 
-Start virtual machine with
+Create a new directory and cd to it then start virtual machine with
 
 ```
 vagrant init nlesc/3d-e-chem
