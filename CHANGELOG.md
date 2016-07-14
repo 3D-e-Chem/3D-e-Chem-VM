@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fixed
+
+* Kripodb sample data set renamed (#19)
+
 ## [1.1.1] - 2016-06-08
 
 ### Fixed

@@ -1,5 +1,5 @@
 ---
-kripodb_version: v1.4.2
+kripodb_version: v2.0.0
 example_url: https://github.com/3D-e-Chem/knime-kripodb/blob/master/examples/Knime-KripoDB-example.zip?raw=true
 workflow_urls:
   - https://github.com/3D-e-Chem/knime-kripodb/blob/master/examples/KRIPO_bioisosteric_replacement_workflow.zip?raw=true

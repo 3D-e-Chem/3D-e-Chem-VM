@@ -6,7 +6,7 @@
   with_items:
     - fragments.sqlite
     - fingerprints.sqlite
-    - distances.h5
+    - similarities.h5
 - name: /data/kripo directory
   file: path=/data/kripo/tiny state=directory
 - name: /data/kripo/gpcr directory
