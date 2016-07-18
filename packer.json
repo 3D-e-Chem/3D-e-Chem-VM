@@ -28,7 +28,7 @@
             "roles/knime", "roles/kripo",
             "roles/modifiedtanimoto", "roles/gpcrdb",
             "roles/sstea", "roles/chemdb4vs",
-            "roles/klifs"
+            "roles/klifs", "roles/sygma"
         ]
     }],
     "post-processors": [{

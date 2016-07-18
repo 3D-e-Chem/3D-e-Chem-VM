@@ -1,0 +1,3 @@
+---
+- name: Install latest Sygma nodes for KNIME
+  command: /usr/bin/knime_plugin_installer.sh nl.esciencecenter.e3dchem.sygma.plugin {{knime_repositories}}
