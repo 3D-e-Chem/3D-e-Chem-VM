@@ -3,5 +3,5 @@
   pip: name=pip state=latest
 - name: Latest setuptools
   pip: name=setuptools state=latest
-- name: KripoDB python package
+- name: SyGMa Python package
   pip: name=git+https://github.com/ridderl/sygma.git editable=false state=latest
