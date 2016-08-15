@@ -6,7 +6,7 @@
       repositories/https\:__3d-e-chem.github.io_updates/enabled=true
       repositories/https\:__3d-e-chem.github.io_updates/isSystem=false
       repositories/https\:__3d-e-chem.github.io_updates/name=
-      repositories/https\:__3d-e-chem.github.io_updates/nickname=https\://3d-e-chem.github.io/updates
+      repositories/https\:__3d-e-chem.github.io_updates/nickname=3D-e-Chem Update Site
       repositories/https\:__3d-e-chem.github.io_updates/suffix=content.xml
       repositories/https\:__3d-e-chem.github.io_updates/type=org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository
       repositories/https\:__3d-e-chem.github.io_updates/uri=https\://3d-e-chem.github.io/updates
@@ -19,7 +19,7 @@
       repositories/https\:__3d-e-chem.github.io_updates/enabled=true
       repositories/https\:__3d-e-chem.github.io_updates/isSystem=false
       repositories/https\:__3d-e-chem.github.io_updates/name=
-      repositories/https\:__3d-e-chem.github.io_updates/nickname=https\://3d-e-chem.github.io/updates
+      repositories/https\:__3d-e-chem.github.io_updates/nickname=3D-e-Chem Update Site
       repositories/https\:__3d-e-chem.github.io_updates/provider=
       repositories/https\:__3d-e-chem.github.io_updates/suffix=artifacts.xml
       repositories/https\:__3d-e-chem.github.io_updates/type=org.eclipse.equinox.p2.artifact.repository.simpleRepository
