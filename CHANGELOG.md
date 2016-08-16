@@ -9,6 +9,10 @@ Formatted as described on http://keepachangelog.com/.
 
 - Sygma Python library and KNIME node (#20)
 
+### Changed
+
+- Disabled Virtualbox 3D accleration, so webgl works
+
 ### Fixed
 
 - Kripodb sample data set renamed (#19)
