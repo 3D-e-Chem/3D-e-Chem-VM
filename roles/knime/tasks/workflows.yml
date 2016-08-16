@@ -1,3 +1,7 @@
 ---
+- name: Remove old 3D-e-Chem workflow directory
+  file: path=/home/vagrant/knime-workspace/3D-e-Chem-Workflows state=absent
 - name: 3D-e-Chem Workflows repo clone
   git: repo={{ knime_workflows.repo }} dest={{ knime_workflows.root }} version={{ knime_workflows.version }} force=yes
+- name: Vagrant owns 3D-e-Chem Workflows
+  file: path={{ knime_workflows.root }} state=directory recurse=yes owner=vagrant group=vagrant

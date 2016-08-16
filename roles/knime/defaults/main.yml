@@ -5,6 +5,6 @@ knime_update_version: 3.2
 knime_repositories: https://3d-e-chem.github.io/updates,http://update.knime.org/analytics-platform/{{ knime_update_version }},http://update.knime.org/store/{{ knime_update_version }},http://update.knime.org/community-contributions/trusted/{{ knime_update_version }},http://update.knime.org/community-contributions/{{ knime_update_version }}
 knime_examples_root: /home/vagrant/knime-workspace/3D-e-Chem-Examples
 knime_workflows:
-  root: /home/vagrant/knime-workspace/3D-e-Chem-Workflows
+  root: /home/vagrant/knime-workspace/3D-e-Chem Workflows
   repo: https://github.com/3D-e-Chem/workflows.git
   version: HEAD
