@@ -9,7 +9,6 @@
     - gpcrdb
     - kripo
     - sstea
-    - chemdb4vs
     - klifs
     - sygma
   tasks:

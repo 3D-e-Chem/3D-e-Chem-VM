@@ -1,7 +1,3 @@
 ---
 - name: Examples directory in workspace
   file: path={{ knime_examples_root }} state=directory owner=vagrant group=vagrant
-- name: Examples meta file
-  template: src=workflowset4examples.meta dest='{{ knime_examples_root }}/workflowset.meta' owner=vagrant group=vagrant
-- name: Examples workflowset file
-  copy: src=examples.project dest={{ knime_examples_root }}/.project owner=vagrant group=vagrant

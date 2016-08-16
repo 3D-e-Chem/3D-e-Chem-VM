@@ -27,7 +27,7 @@
             "roles/self-upgrade", "roles/wiki",
             "roles/knime", "roles/kripo",
             "roles/modifiedtanimoto", "roles/gpcrdb",
-            "roles/sstea", "roles/chemdb4vs",
+            "roles/sstea",
             "roles/klifs", "roles/sygma"
         ]
     }],

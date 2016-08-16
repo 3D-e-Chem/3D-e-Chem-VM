@@ -1,3 +1,0 @@
----
-- name: Chemdb4VS workflow
-  git: repo=https://github.com/3D-e-Chem/Chemdb4VS.git dest='{{ knime_workflows_root }}/Chemdb4VS'
