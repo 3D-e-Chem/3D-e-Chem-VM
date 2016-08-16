@@ -1,4 +1,6 @@
 - name: /data/kripo/pdb directory
   file: path=/data/kripo/pdb state=directory
 - name: PDB fragment sample data
-  get_url: url='{{ kripo_dataset_pdb }}' dest=/data/kripo/pdb/kripo.sqlite timeout=600
+  command: /usr/bin/wget -N {{ kripo_dataset_pdb }}
+  args:
+    chdir: /data/kripo/pdb/
