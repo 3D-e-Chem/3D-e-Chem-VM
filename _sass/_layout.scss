@@ -16,11 +16,6 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
 }
 
 .site-title {
@@ -262,4 +257,8 @@
             font-size: 18px;
         }
     }
+}
+
+.octicon {
+  vertical-align: text-top;
 }
