@@ -1,7 +1,5 @@
 
-@include font-face(Akkurat, fonts/lineto-akkurat-light, 200, normal, eot woff truetype svg);
-@include font-face(Akkurat, fonts/lineto-akkurat-regular, 400, normal, eot woff truetype svg);
-@include font-face(Akkurat, fonts/lineto-akkurat-bold, 600, normal, eot woff truetype svg);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 /**
  * Reset some basic elements
