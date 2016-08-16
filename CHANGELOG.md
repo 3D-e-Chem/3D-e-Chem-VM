@@ -12,6 +12,7 @@ Formatted as described on http://keepachangelog.com/.
 ### Changed
 
 - Disabled Virtualbox 3D accleration, so webgl works
+- Kripo fragments db source url (#22)
 
 ### Fixed
 
