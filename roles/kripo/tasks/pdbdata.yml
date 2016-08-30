@@ -4,3 +4,5 @@
   command: /usr/bin/wget -N {{ kripo_dataset_pdb }}
   args:
     chdir: /data/kripo/pdb/
+- name: Remove old fragments db
+  file: path=/data/kripo/pdb/kripo.sqlite state=absent
