@@ -4,4 +4,3 @@
 - include: knime.yml
 - include: sampledata.yml
 - include: pdbdata.yml
-- include: pymol.yml
