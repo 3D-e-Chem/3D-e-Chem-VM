@@ -5,6 +5,10 @@ Formatted as described on http://keepachangelog.com/.
 
 ## [Unreleased]
 
+## [1.2.0] - 2016-09-04
+
+Based on [Chemical Analytics Platform](https://github.com/NLeSC/Chemical-Analytics-Platform) version 0.8.2
+
 ### Added
 
 - Sygma Python library and KNIME node (#20)
