@@ -19,6 +19,10 @@ vagrant init nlesc/3d-e-chem
 vagrant up
 ```
 
+Usage screencast on YouTube:
+
+[![3D-e-Chem Virtual Machine screencast on YouTube](https://img.youtube.com/vi/zBv4rPfsLLc/0.jpg)](https://www.youtube.com/watch?v=zBv4rPfsLLc)
+
 # Build
 
 Requirements:
