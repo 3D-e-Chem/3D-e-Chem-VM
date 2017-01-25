@@ -3,7 +3,7 @@ sudo: false
 cache: pip
 install:
 - pip install ansible
-- wget https://releases.hashicorp.com/packer/0.12.2/packer_0.12.2_linux_amd64.zip && unzip packer_0.12.2_linux_amd64.zip
+- curl -O https://releases.hashicorp.com/packer/0.12.2/packer_0.12.2_linux_amd64.zip && unzip packer_0.12.2_linux_amd64.zip
 script:
 - ansible-playbook -i localhost, --syntax-check playbook.yml
 - ./packer validate packer.json
