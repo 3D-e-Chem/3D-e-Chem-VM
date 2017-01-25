@@ -5,6 +5,11 @@ Formatted as described on http://keepachangelog.com/.
 
 ## [Unreleased]
 
+### Changed
+
+- Upgraded KNIME to v3.3.1
+- Upgraded KripoDB to v2.1.0
+
 ## [1.2.0] - 2016-09-04
 
 Based on [Chemical Analytics Platform](https://github.com/NLeSC/Chemical-Analytics-Platform) version 0.8.2
