@@ -3,25 +3,25 @@
   blockinfile:
     dest: "{{ knime_root }}/p2/org.eclipse.equinox.p2.engine/profileRegistry/KNIMEProfile.profile/.data/.settings/org.eclipse.equinox.p2.metadata.repository.prefs"
     content: |
-      repositories/https\:__3d-e-chem.github.io_updates/enabled=true
-      repositories/https\:__3d-e-chem.github.io_updates/isSystem=false
-      repositories/https\:__3d-e-chem.github.io_updates/name=
-      repositories/https\:__3d-e-chem.github.io_updates/nickname=3D-e-Chem Update Site
-      repositories/https\:__3d-e-chem.github.io_updates/suffix=content.xml
-      repositories/https\:__3d-e-chem.github.io_updates/type=org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository
-      repositories/https\:__3d-e-chem.github.io_updates/uri=https\://3d-e-chem.github.io/updates
-      repositories/https\:__3d-e-chem.github.io_updates/version=1.0.0
+      repositories/https\:__3d-e-chem.github.io_knime-node-collection/enabled=true
+      repositories/https\:__3d-e-chem.github.io_knime-node-collection/isSystem=false
+      repositories/https\:__3d-e-chem.github.io_knime-node-collection/name=
+      repositories/https\:__3d-e-chem.github.io_knime-node-collection/nickname=3D-e-Chem Update Site
+      repositories/https\:__3d-e-chem.github.io_knime-node-collection/suffix=content.xml
+      repositories/https\:__3d-e-chem.github.io_knime-node-collection/type=org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository
+      repositories/https\:__3d-e-chem.github.io_knime-node-collection/uri=https\://3d-e-chem.github.io/knime-node-collection
+      repositories/https\:__3d-e-chem.github.io_knime-node-collection/version=1.0.0
 - name: "3D e Chem update site as artifact"
   blockinfile:
     dest: "{{ knime_root }}/p2/org.eclipse.equinox.p2.engine/profileRegistry/KNIMEProfile.profile/.data/.settings/org.eclipse.equinox.p2.artifact.repository.prefs"
     content: |
-      repositories/https\:__3d-e-chem.github.io_updates/description=
-      repositories/https\:__3d-e-chem.github.io_updates/enabled=true
-      repositories/https\:__3d-e-chem.github.io_updates/isSystem=false
-      repositories/https\:__3d-e-chem.github.io_updates/name=
-      repositories/https\:__3d-e-chem.github.io_updates/nickname=3D-e-Chem Update Site
-      repositories/https\:__3d-e-chem.github.io_updates/provider=
-      repositories/https\:__3d-e-chem.github.io_updates/suffix=artifacts.xml
-      repositories/https\:__3d-e-chem.github.io_updates/type=org.eclipse.equinox.p2.artifact.repository.simpleRepository
-      repositories/https\:__3d-e-chem.github.io_updates/uri=https\://3d-e-chem.github.io/updates
-      repositories/https\:__3d-e-chem.github.io_updates/version=1.0.0
+      repositories/https\:__3d-e-chem.github.io_knime-node-collection/description=
+      repositories/https\:__3d-e-chem.github.io_knime-node-collection/enabled=true
+      repositories/https\:__3d-e-chem.github.io_knime-node-collection/isSystem=false
+      repositories/https\:__3d-e-chem.github.io_knime-node-collection/name=
+      repositories/https\:__3d-e-chem.github.io_knime-node-collection/nickname=3D-e-Chem Update Site
+      repositories/https\:__3d-e-chem.github.io_knime-node-collection/provider=
+      repositories/https\:__3d-e-chem.github.io_knime-node-collection/suffix=artifacts.xml
+      repositories/https\:__3d-e-chem.github.io_knime-node-collection/type=org.eclipse.equinox.p2.artifact.repository.simpleRepository
+      repositories/https\:__3d-e-chem.github.io_knime-node-collection/uri=https\://3d-e-chem.github.io/knime-node-collection
+      repositories/https\:__3d-e-chem.github.io_knime-node-collection/version=1.0.0

@@ -11,6 +11,7 @@ Formatted as described on http://keepachangelog.com/.
 
 ### Changed
 
+- Switched to single 3D-e-Chem feature instead of every node separately (#28)
 - Upgraded KNIME to v3.3.1
 - Upgraded KripoDB to v2.1.0
 

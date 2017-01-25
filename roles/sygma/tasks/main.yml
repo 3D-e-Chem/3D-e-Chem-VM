@@ -1,4 +1,3 @@
 ---
 - include: python.yml
-- include: knime.yml
 - include: example.yml

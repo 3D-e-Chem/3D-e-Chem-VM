@@ -2,7 +2,7 @@
 knime_version: 3.3.1
 knime_root: /opt/knime/knime-full_{{ knime_version }}
 knime_update_version: 3.3
-knime_repositories: https://3d-e-chem.github.io/updates,http://update.knime.org/analytics-platform/{{ knime_update_version }},http://update.knime.org/store/{{ knime_update_version }},http://update.knime.org/community-contributions/trusted/{{ knime_update_version }},http://update.knime.org/community-contributions/{{ knime_update_version }}
+knime_repositories: https://3d-e-chem.github.io/knime-node-collection,http://update.knime.org/analytics-platform/{{ knime_update_version }},http://update.knime.org/store/{{ knime_update_version }},http://update.knime.org/community-contributions/trusted/{{ knime_update_version }},http://update.knime.org/community-contributions/{{ knime_update_version }}
 knime_examples_root: /home/vagrant/knime-workspace/3D-e-Chem-Examples
 knime_workflows:
   root: /home/vagrant/knime-workspace/3D-e-Chem Workflows

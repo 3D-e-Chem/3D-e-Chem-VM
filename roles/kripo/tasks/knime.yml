@@ -1,3 +1,0 @@
----
-- name: Install latest Kripo nodes for KNIME
-  command: /usr/bin/knime_plugin_installer.sh nl.esciencecenter.e3dchem.kripodb.plugin {{knime_repositories}}

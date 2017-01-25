@@ -1,6 +1,5 @@
 ---
 - include: kripodb.yml
 - include: example.yml
-- include: knime.yml
 - include: sampledata.yml
 - include: pdbdata.yml

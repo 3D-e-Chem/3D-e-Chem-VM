@@ -1,5 +1,3 @@
 ---
-- name: Install latest modified tanimoto distance
-  command: /usr/bin/knime_plugin_installer.sh nl.esciencecenter.e3dchem.modifiedtanimoto {{ knime_repositories }}
 - name: Knime example workflow for modified tanimoto distance
   unarchive: src={{ example_url}} dest={{ knime_examples_root }} copy=no
