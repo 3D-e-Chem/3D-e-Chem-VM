@@ -1,0 +1,3 @@
+---
+- name: Knime example workflow for molviewer node
+  unarchive: src={{ example_url}} dest={{ knime_examples_root }} copy=no

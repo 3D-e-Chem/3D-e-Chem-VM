@@ -28,7 +28,8 @@
             "roles/knime", "roles/kripo",
             "roles/modifiedtanimoto", "roles/gpcrdb",
             "roles/sstea",
-            "roles/klifs", "roles/sygma"
+            "roles/klifs", "roles/sygma",
+            "roles/molviewer"
         ]
     }],
     "post-processors": [{
