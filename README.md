@@ -67,3 +67,10 @@ Publish box on https://atlas.hashicorp.com/nlesc/boxes/3d-e-chem using the follo
 # Contributing
 
 Please see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+# Cite
+
+When using 3D-e-Chem-VM please cite one of the following:
+
+* [Zenodo software release DOI](https://zenodo.org/badge/latestdoi/19641/3D-e-Chem/3D-e-Chem-VM)
+* McGuire, R., Verhoeven, S., Vass, M., Vriend, G., De Esch, I. J. P., Lusher, S. J., … de Graaf, C. (2017). 3D-e-Chem-VM: Structural cheminformatics research infrastructure in a freely available Virtual Machine. Journal of Chemical Information and Modeling. doi: http://dx.doi.org/10.1021/acs.jcim.6b00686

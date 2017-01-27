@@ -5,6 +5,8 @@ Formatted as described on http://keepachangelog.com/.
 
 ## [Unreleased]
 
+## [1.3.0] - 2017-01-26
+
 ### Added
 
 - KNIME molviewer example workflow (#27)
