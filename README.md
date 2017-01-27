@@ -73,4 +73,4 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md).
 When using 3D-e-Chem-VM please cite one of the following:
 
 * [Zenodo software release DOI](https://zenodo.org/badge/latestdoi/19641/3D-e-Chem/3D-e-Chem-VM)
-* McGuire, R., Verhoeven, S., Vass, M., Vriend, G., De Esch, I. J. P., Lusher, S. J., … de Graaf, C. (2017). 3D-e-Chem-VM: Structural cheminformatics research infrastructure in a freely available Virtual Machine. Journal of Chemical Information and Modeling. doi: http://dx.doi.org/10.1021/acs.jcim.6b00686
+* R. McGuire, S. Verhoeven, M. Vass, G. Vriend, I. J. P. De Esch, S. J. Lusher, R. Leurs, L. Ridder, A. J. Kooistra, T. Ritschel, C. de Graaf (2017). 3D-e-Chem-VM: Structural cheminformatics research infrastructure in a freely available Virtual Machine. Journal of Chemical Information and Modeling. doi: http://dx.doi.org/10.1021/acs.jcim.6b00686
