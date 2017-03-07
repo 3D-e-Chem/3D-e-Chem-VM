@@ -1,8 +1,2 @@
-- name: /data/kripo/pdb directory
-  file: path=/data/kripo/pdb state=directory
-- name: PDB fragment sample data
-  command: /usr/bin/wget -N {{ kripo_dataset_pdb }}
-  args:
-    chdir: /data/kripo/pdb/
 - name: Remove old fragments db
   file: path=/data/kripo/pdb/kripo.sqlite state=absent
