@@ -29,6 +29,7 @@
             "roles/modifiedtanimoto", "roles/gpcrdb",
             "roles/sstea",
             "roles/klifs", "roles/sygma",
+            "roles/silicosit",
             "roles/molviewer"
         ]
     }],

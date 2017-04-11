@@ -1,0 +1,31 @@
+---
+- name: Babel devel
+  apt: pkg=libopenbabel-dev state=present
+- name: Does /usr/local/bin/shape-it exist
+  stat: path=/usr/local/bin/shape-it
+  register: bin_shapeit
+- name: Compile shape-it
+  include: shape-it.yml
+  when: bin_shapeit.stats.exists == False
+- name: Does /usr/local/bin/align-it exist
+  stat: path=/usr/local/bin/align-it
+  register: bin_alignit
+- name: Compile align-it
+  include: align-it.yml
+  when: bin_alignit.stats.exists == False  
+- name: Does /usr/local/bin/strip-it exist
+  stat: path=/usr/local/bin/strip-it
+  register: bin_stripit
+- name: Compile strip-it
+  include: strip-it.yml
+  when: bin_stripit.stats.exists == False
+- name: Does /usr/local/bin/filter-it exist
+  stat: path=/usr/local/bin/filter-it
+  register: bin_filterit
+- name: Compile filter-it
+  include: filter-it.yml
+  when: bin_filterit.stats.exists == False
+  # Qed is a RDKit-based implementation of Richard Bickerton’s quantitative estimation of drug-likeness (Nature Chemistry 2012, 4, 90-98).
+- name: Qed
+  pip:
+    name: http://silicos-it.be.s3-website-eu-west-1.amazonaws.com/_downloads/qed-1.0.1.tar.gz

@@ -5,6 +5,10 @@ Formatted as described on http://keepachangelog.com/.
 
 ## [Unreleased]
 
+### Added
+
+- [Silicos-it software](http://silicos-it.be.s3-website-eu-west-1.amazonaws.com/index.html)
+
 ## [1.4.0] - 2017-03-10
 
 Based on [Chemical Analytics Platform](https://github.com/NLeSC/Chemical-Analytics-Platform) version 0.8.4

@@ -1,0 +1,22 @@
+---
+- unarchive:
+    src: http://silicos-it.be.s3-website-eu-west-1.amazonaws.com/_downloads/strip-it-1.0.2.tar.gz
+    dest: /opt/strip-it
+    remote_src: True
+- name: Build dir
+  file:
+    path: /opt/strip-it/build
+    state: directory
+- name: cmake
+  command: cmake ..
+  args:
+    chdir: /opt/strip-it/build
+    creates: Makefile
+- name: make install
+  make:
+    chdir: /opt/strip-it/build
+    target: install
+- name: Clean up
+  file:
+    path: /opt/strip-it
+    state: absent
