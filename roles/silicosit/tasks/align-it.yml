@@ -1,22 +1,27 @@
 ---
+- get_url:
+    url: http://silicos-it.be.s3-website-eu-west-1.amazonaws.com/_downloads/align-it-1.0.4.tar.gz
+    dest: /opt
 - unarchive:
-    src: http://silicos-it.be.s3-website-eu-west-1.amazonaws.com/_downloads/align-it-1.0.4.tar.gz
-    dest: /opt/align-it
-    remote_src: True
+    src: /opt/align-it-1.0.4.tar.gz
+    dest: /opt
 - name: Build dir
   file:
-    path: /opt/align-it/build
+    path: /opt/align-it-1.0.4/build
     state: directory
 - name: cmake
   command: cmake ..
   args:
-    chdir: /opt/align-it/build
-    creates: Makefile
+    chdir: /opt/align-it-1.0.4/build
 - name: make install
-  make:
-    chdir: /opt/align-it/build
-    target: install
-- name: Clean up
+  command: make install
+  args:
+    chdir: /opt/align-it-1.0.4/build
+- name: Clean up src dir
   file:
-    path: /opt/align-it
+    path: /opt/align-it-1.0.4
+    state: absent
+- name: Clean up tarball
+  file:
+    path: /opt/align-it-1.0.4.tar.gz
     state: absent
