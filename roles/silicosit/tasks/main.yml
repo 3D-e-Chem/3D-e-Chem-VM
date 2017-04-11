@@ -1,6 +1,11 @@
 ---
 - name: Babel devel
   apt: pkg=libopenbabel-dev state=present
+- name: Babel include dir symlink
+  file:
+    src: /usr/include/openbabel-2.0/openbabel
+    dest: /usr/include/openbabel
+    state: link
 - name: Does /usr/local/bin/shape-it exist
   stat: path=/usr/local/bin/shape-it
   register: bin_shapeit
