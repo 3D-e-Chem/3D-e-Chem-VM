@@ -17,6 +17,10 @@
   command: make install
   args:
     chdir: /opt/align-it-1.0.4/build
+- name: PyMol integration
+  command: cp align-it.py {{ pymol_startup }}
+  args:
+    chdir: /opt/align-it-1.0.4/pymol
 - name: Clean up src dir
   file:
     path: /opt/align-it-1.0.4
