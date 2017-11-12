@@ -9,6 +9,11 @@ Formatted as described on http://keepachangelog.com/.
 
 Based on [Chemical Analytics Platform](https://github.com/NLeSC/Chemical-Analytics-Platform) version 0.8.5
 
+### Added
+
+- PLANTS example workflow
+- Silicos-IT example workflows
+
 ### Changed
 
 - Upgraded KripoDB to v2.3.1

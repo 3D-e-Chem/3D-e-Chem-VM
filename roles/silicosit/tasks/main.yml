@@ -5,3 +5,14 @@
   args:
     chdir: "{{ knime_examples_root }}"
     creates: "{{ knime_examples_root }}/silicos-it"
+- name: Babel devel
+  apt: pkg=libopenbabel-dev state=present
+- name: Babel include dir symlink
+  file:
+    src: /usr/include/openbabel-2.0/openbabel
+    dest: /usr/include/openbabel
+    state: link
+  # Qed is a RDKit-based implementation of Richard Bickerton’s quantitative estimation of drug-likeness (Nature Chemistry 2012, 4, 90-98).
+- name: Qed
+  pip:
+    name: http://silicos-it.be.s3-website-eu-west-1.amazonaws.com/_downloads/qed-1.0.1.tar.gz
