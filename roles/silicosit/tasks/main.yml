@@ -1,0 +1,7 @@
+---
+- apt: name=curl
+- name: KNIME example workflows for Silicos-IT nodes
+  shell: curl {{ example_url }} | tar -zxf - --transform 's/knime-silicos-it-{{ silicosit_version }}\/examples/silicos-it/' knime-silicos-it-{{ silicosit_version }}/examples
+  args:
+    chdir: "{{ knime_examples_root }}"
+    creates: "{{ knime_examples_root }}/silicos-it"

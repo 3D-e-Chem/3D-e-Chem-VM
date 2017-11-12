@@ -51,9 +51,9 @@ Then use steps described at Usage chapter in a new directory.
 
 Requirements:
 
-* Atlas account, https://atlas.hashicorp.com
+* Vagrant cloud account, https://app.vagrantup.com/nlesc/boxes/3d-e-chem
 
-Publish box on https://atlas.hashicorp.com/nlesc/boxes/3d-e-chem using the following steps:
+Publish box on https://app.vagrantup.com/nlesc/boxes/3d-e-chem using the following steps:
 
 1. Create a new version
 2. Create a new provider

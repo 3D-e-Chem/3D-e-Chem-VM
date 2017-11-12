@@ -5,6 +5,14 @@ Formatted as described on http://keepachangelog.com/.
 
 ## [Unreleased]
 
+## [1.4.1] - 2017-11-12
+
+Based on [Chemical Analytics Platform](https://github.com/NLeSC/Chemical-Analytics-Platform) version 0.8.5
+
+### Changed
+
+- Upgraded KripoDB to v2.3.1
+
 ## [1.4.0] - 2017-03-10
 
 Based on [Chemical Analytics Platform](https://github.com/NLeSC/Chemical-Analytics-Platform) version 0.8.4

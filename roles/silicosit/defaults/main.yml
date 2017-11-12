@@ -1,0 +1,2 @@
+silicosit_version: 1.1.2
+example_url: https://codeload.github.com/3D-e-Chem/knime-silicos-it/tar.gz/v{{ silicosit_version }}

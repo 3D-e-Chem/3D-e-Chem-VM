@@ -1,39 +1,52 @@
 {
-    "variables": {
-        "ssh_name": "vagrant",
-        "ssh_pass": "vagrant"
-    },
-    "builders": [{
-        "type": "virtualbox-ovf",
-        "source_path": "../Chemical-Analytics-Platform/output-virtualbox-iso/cap.ova",
-        "ssh_username": "{{user `ssh_name`}}",
-        "ssh_password": "{{user `ssh_pass`}}",
-        "shutdown_command": "echo {{user `ssh_pass`}} | sudo -S shutdown -P now",
-        "guest_additions_mode": "disable",
-        "vboxmanage": [
-            ["modifyvm", "{{.Name}}", "--memory", "2048"],
-            ["modifyvm", "{{.Name}}", "--clipboard", "bidirectional"],
-            ["modifyvm", "{{.Name}}", "--draganddrop", "bidirectional"],
-            ["modifyvm", "{{.Name}}", "--accelerate3d", "off"],
-            ["modifyvm", "{{.Name}}", "--vram", "128"]
-        ]
-    }],
-    "provisioners": [{
-        "type": "ansible-local",
-        "extra_arguments": ["--become"],
-        "playbook_file": "playbook.yml",
-        "role_paths": [
-            "roles/bootstrap",
-            "roles/self-upgrade", "roles/wiki",
-            "roles/knime", "roles/kripo",
-            "roles/modifiedtanimoto", "roles/gpcrdb",
-            "roles/sstea",
-            "roles/klifs", "roles/sygma",
-            "roles/molviewer"
-        ]
-    }],
-    "post-processors": [{
-        "type": "vagrant",
-        "vagrantfile_template": "Vagrantfile.tpl"
-    }]
+  "variables": {
+    "ssh_name": "vagrant",
+    "ssh_pass": "vagrant"
+  },
+  "builders": [
+    {
+      "type": "virtualbox-ovf",
+      "source_path":
+        "../Chemical-Analytics-Platform/output-virtualbox-iso/cap.ova",
+      "ssh_username": "{{user `ssh_name`}}",
+      "ssh_password": "{{user `ssh_pass`}}",
+      "shutdown_command": "echo {{user `ssh_pass`}} | sudo -S shutdown -P now",
+      "guest_additions_mode": "disable",
+      "vboxmanage": [
+        ["modifyvm", "{{.Name}}", "--memory", "2048"],
+        ["modifyvm", "{{.Name}}", "--clipboard", "bidirectional"],
+        ["modifyvm", "{{.Name}}", "--draganddrop", "bidirectional"],
+        ["modifyvm", "{{.Name}}", "--accelerate3d", "off"],
+        ["modifyvm", "{{.Name}}", "--vram", "128"]
+      ]
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "ansible-local",
+      "extra_arguments": ["--become"],
+      "playbook_file": "playbook.yml",
+      "role_paths": [
+        "roles/bootstrap",
+        "roles/self-upgrade",
+        "roles/wiki",
+        "roles/knime",
+        "roles/kripo",
+        "roles/modifiedtanimoto",
+        "roles/gpcrdb",
+        "roles/sstea",
+        "roles/plants",
+        "roles/silicosit",
+        "roles/klifs",
+        "roles/sygma",
+        "roles/molviewer"
+      ]
+    }
+  ],
+  "post-processors": [
+    {
+      "type": "vagrant",
+      "vagrantfile_template": "Vagrantfile.tpl"
+    }
+  ]
 }
