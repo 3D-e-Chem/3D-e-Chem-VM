@@ -1,14 +1,16 @@
 ---
 - name: Remove old 3D-e-Chem workflow directory
   file: path=/home/vagrant/knime-workspace/3D-e-Chem-Workflows state=absent
+- name: Remove 3D-e-Chem workflow directory
+  file: path={{ knime_workflows.root }} state=absent
+- name: Create 3D-e-Chem workflow directory
+  file: path={{knime_workflows.root}} state=directory
 - name: 3D-e-Chem Workflows repo clone
   git: repo={{ knime_workflows.repo }} dest={{knime_workflows.archive}} version={{ knime_workflows.version }} force=yes
-- name: 3D-e-Chem workflow directory
-  file: path={{knime_workflows.root}} state=directory
 - name: Unzip workflows
   unarchive:
     src: "{{ item }}"
-    dest: {{knime_workflows.root}}
+    dest: "{{knime_workflows.root}}"
   with_fileglob:
   - "{{knime_workflows.archive}}/*/*.knwf"
 - name: Vagrant owns 3D-e-Chem Workflows
