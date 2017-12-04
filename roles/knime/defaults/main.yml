@@ -6,5 +6,6 @@ knime_repositories: https://3d-e-chem.github.io/knime-node-collection,http://upd
 knime_examples_root: /home/vagrant/knime-workspace/3D-e-Chem-Examples
 knime_workflows:
   root: /home/vagrant/knime-workspace/3D-e-Chem Workflows
+  archive: /opt/3D-e-Chem-Workflows
   repo: https://github.com/3D-e-Chem/workflows.git
-  version: HEAD
+  version: jcim
