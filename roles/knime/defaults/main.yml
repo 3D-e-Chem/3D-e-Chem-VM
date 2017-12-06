@@ -8,4 +8,4 @@ knime_workflows:
   root: /home/vagrant/knime-workspace/3D-e-Chem Workflows
   archive: /opt/3D-e-Chem-Workflows
   repo: https://github.com/3D-e-Chem/workflows.git
-  version: jcim
+  version: master

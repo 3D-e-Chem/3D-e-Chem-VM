@@ -5,6 +5,12 @@ Formatted as described on http://keepachangelog.com/.
 
 ## [Unreleased]
 
+## [1.4.2] - 2017-12-06
+
+### Changed
+
+- adapted to new format of workflows repo
+
 ## [1.4.1] - 2017-11-12
 
 Based on [Chemical Analytics Platform](https://github.com/NLeSC/Chemical-Analytics-Platform) version 0.8.5
