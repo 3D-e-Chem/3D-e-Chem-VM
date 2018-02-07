@@ -1,0 +1,15 @@
+---
+- name: KNIME settings dir
+  file:
+    path: "{{ knime_workspace_root }}/.metadata/.plugins/org.eclipse.core.runtime/.settings"
+    state: directory
+- name: python2 is default
+  blockinfile:
+    dest: "{{ knime_workspace_root }}/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.knime.python2.prefs"
+    create: yes
+    content: |
+      defaultPythonOption=python
+      eclipse.preferences.version=1
+      python2Path=python
+      python3Path=python3
+      serializerId=org.knime.serialization.flatbuffers.column

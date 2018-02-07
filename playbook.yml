@@ -16,7 +16,7 @@
     - molviewer
     - silicosit
   tasks:
-    - name: Vagrant owns Knime
+    - name: Vagrant owns KNIME
       file: path=/opt/knime state=directory recurse=yes owner=vagrant group=vagrant
-    - name: Vagrant owns Knime workspace examples
-      file: path='{{ knime_examples_root }}' state=directory recurse=yes owner=vagrant group=vagrant
+    - name: Vagrant owns KNIME workspace
+      file: path='{{ knime_workspace_root }}' state=directory recurse=yes owner=vagrant group=vagrant

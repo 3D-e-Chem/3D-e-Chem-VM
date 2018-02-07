@@ -3,3 +3,4 @@
 - include: feature.yml
 - include: examples.yml
 - include: workflows.yml
+- include: python.yml
