@@ -7,11 +7,17 @@
   file: path={{knime_workflows.root}} state=directory
 - name: 3D-e-Chem Workflows repo clone
   git: repo={{ knime_workflows.repo }} dest={{knime_workflows.archive}} version={{ knime_workflows.version }} force=yes
+- find:
+    paths: "{{ knime_workflows.archive }}"
+    patterns: '*.knwf'
+    recurse: yes
+  register: workflow_archives
 - name: Unzip workflows
   unarchive:
-    src: "{{ item }}"
+    remote_src: yes
+    src: "{{ item.path }}"
     dest: "{{knime_workflows.root}}"
-  with_fileglob:
-  - "{{knime_workflows.archive}}/*/*.knwf"
+  with_items:
+  - "{{ workflow_archives.files }}"
 - name: Vagrant owns 3D-e-Chem Workflows
   file: path={{ knime_workflows.root }} state=directory recurse=yes owner=vagrant group=vagrant
