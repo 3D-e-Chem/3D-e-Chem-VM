@@ -8,7 +8,7 @@
     dest: "{{ knime_workspace_root }}/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.knime.python2.prefs"
     create: yes
     content: |
-      defaultPythonOption=python
+      defaultPythonOption=python2
       eclipse.preferences.version=1
       python2Path=python
       python3Path=python3
