@@ -5,6 +5,19 @@ Formatted as described on http://keepachangelog.com/.
 
 ## [Unreleased]
 
+## [1.4.3] - 2018-02-09
+
+### Changed
+
+* 3D-e-Chem node collection v1.1.3
+* Upgraded Virtualbox Guest Additions to v5.2.6
+* Upgrade KNIME to v3.5.2
+* Upgraded RDKit to 2017_09_3
+
+### Fixed
+
+- Made Python version 2 the default in KNIME
+
 ## [1.4.2] - 2017-12-06
 
 ### Changed
