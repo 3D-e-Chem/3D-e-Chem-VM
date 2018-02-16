@@ -24,8 +24,7 @@ partners:
   - url: https://www.vu.nl
     logo_url: https://www.esciencecenter.nl/img/partners/VUlogo_EN_Wit_HR_RGB_tcm9-201385.png
   - url: https://www.radboudumc.nl
-    logo_url: https://www.esciencecenter.nl/img/partners/ru-eng-pms1805-a4.jpg
-
+    logo_url: http://3d-e-chem.github.io/assets/logo/Radboudumc.png
 # Optional settings
 # email: <contact email>
 # twitter_username: <twitter_username>#
