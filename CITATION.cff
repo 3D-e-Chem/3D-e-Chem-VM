@@ -1,0 +1,14 @@
+# YAML 1.2
+# Metadata for citation of this software according to the CFF format (https://citation-file-format.github.io/)
+cff-version: 1.0.3
+message: If you use this software, please cite it as below.
+title: 3D-e-Chem Virtual Machine
+doi: 10.5281/zenodo.1170588
+authors:
+- given-names: Stefan
+  family-names: Verhoeven
+  affiliation: Nederlands eScience Center
+version: v1.4.3
+date-released: '2018-02-10'
+repository-code: https://github.com/3D-e-Chem/3D-e-Chem-VM
+license: Apache-2.0
