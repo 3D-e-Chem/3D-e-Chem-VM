@@ -7,7 +7,7 @@ urls:
   changelog: https://github.com/3D-e-Chem/3D-e-Chem-VM/blob/master/CHANGELOG.md
   docs: https://github.com/3D-e-Chem/3D-e-Chem-VM/wiki
   #download: https://github.com/3D-e-Chem/3D-e-Chem-VM/releases/latest
-  download: https://atlas.hashicorp.com/nlesc/boxes/3d-e-chem
+  download: https://app.vagrantup.com/nlesc/boxes/3d-e-chem
   issues: https://github.com/3D-e-Chem/3D-e-Chem-VM/issues
   # project: <FIXME>
   project: https://3d-e-chem.github.io
