@@ -5,6 +5,10 @@ Formatted as described on http://keepachangelog.com/.
 
 ## [Unreleased]
 
+## [1.4.4] - 2018-09-27
+
+Based on [Chemical Analytics Platform](https://github.com/NLeSC/Chemical-Analytics-Platform) version 0.8.6
+
 ## [1.4.3] - 2018-02-09
 
 ### Changed
