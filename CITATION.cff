@@ -8,7 +8,7 @@ authors:
 - given-names: Stefan
   family-names: Verhoeven
   affiliation: Nederlands eScience Center
-version: 1.4.3
-date-released: 2018-02-10
+version: 1.4.4
+date-released: 2018-09-27
 repository-code: https://github.com/3D-e-Chem/3D-e-Chem-VM
 license: Apache-2.0
